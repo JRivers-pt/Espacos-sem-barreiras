@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Espaços sem Barreiras - Design Inclusivo & Arquitetura</title>
+
+<meta name="description" content="Guia de Design Inclusivo e Acessibilidade em Portugal. Aprenda a adaptar a sua casa com sofisticação e a beneficiar do IVA a 6% (Verba 2.27).">
+<meta name="keywords" content="Design Inclusivo, Acessibilidade, Portugal, IVA 6%, DL 163/2006, Decoração, Arquitetura">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: { sans: ['Inter', 'sans-serif'] },
+                colors: {
+                    stone: {
+                        50: '#fafaf9', 100: '#f5f5f4', 200: '#e7e5e4', 300: '#d6d3d1',
+                        400: '#a8a29e', 500: '#78716c', 600: '#57534e', 700: '#44403c',
+                        800: '#292524', 900: '#1c1917',
+                    }
+                }
+            }
+        }
+    }
+</script>
+<style>
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-5px); }
+        to { opacity: 0.8; transform: translateY(0); }
+    }
+    details[open] > div { animation: fadeIn 0.3s ease-out forwards; }
+</style>
+</head>
+<body class="bg-stone-50 text-stone-900 antialiased font-sans selection:bg-stone-200 scroll-smooth">
+
+<header class="fixed top-0 w-full bg-stone-50/80 backdrop-blur-md z-50 border-b border-stone-200/50">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 py-5 flex justify-between items-center">
+        <a href="#" class="text-xl font-medium tracking-tighter text-stone-900">ESB.</a>
+        <nav class="hidden md:flex gap-10 items-center">
+            <a href="#ambientes" class="text-sm text-stone-500 hover:text-stone-900 transition-colors">Ambientes</a>
+            <a href="#materiais" class="text-sm text-stone-500 hover:text-stone-900 transition-colors">Materiais</a>
+            <a href="#fiscalidade" class="text-sm text-stone-500 hover:text-stone-900 transition-colors">Fiscalidade</a>
+            <a href="#faq" class="text-sm text-stone-500 hover:text-stone-900 transition-colors">FAQ</a>
+        </nav>
+        <button class="md:hidden text-stone-900"><iconify-icon icon="solar:hamburger-menu-linear" width="24" height="24"></iconify-icon></button>
+    </div>
+</header>
+
+<section class="pt-32 pb-16 md:pt-48 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+    <div class="flex flex-col items-center text-center max-w-4xl mx-auto mb-16 md:mb-24">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-medium tracking-tighter text-stone-900 mb-8 leading-tight">Espaços sem Barreiras</h1>
+        <p class="text-lg md:text-xl text-stone-500 leading-relaxed max-w-2xl font-light">
+            Neste espaço, traduzimos a legislação para o mundo do design, mostrando que a acessibilidade é, acima de tudo, uma forma superior de conforto para todos.
+        </p>
+    </div>
+    <div class="w-full aspect-[4/3] md:aspect-[21/9] bg-stone-200 rounded-2xl overflow-hidden relative group">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075" alt="Sala ampla com luz natural e mobiliário minimalista, demonstrando fluidez espacial e ausência de barreiras." class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" loading="lazy">
+    </div>
+</section>
+
+<section id="ambientes" class="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-stone-200">
+    <div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-4">
+        <div>
+            <span class="text-xs font-medium tracking-widest uppercase text-stone-400 mb-2 block">Métricas de Conforto</span>
+            <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-stone-900">Ambientes</h2>
+        </div>
+        <p class="text-sm text-stone-500 max-w-xs md:text-right">A ergonomia invisível que garante autonomia em cada divisão.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+        <article>
+            <div class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-100 mb-6">
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=2070" alt="Cozinha moderna com bancadas suspensas e raio de manobra amplo." class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-medium mb-3 text-stone-900">A Cozinha Fluida</h3>
+            <p class="text-sm text-stone-500 font-light leading-relaxed">Foco no raio de rotação livre de 1,50m. Bancadas suspensas (0,70m-0,80m) que aliam funcionalidade extrema a uma estética depurada.</p>
+        </article>
+
+        <article class="mt-0 md:mt-12">
+            <div class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-100 mb-6">
+                <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=2069" alt="Casa de banho walk-in com pavimento contínuo e barras de apoio de design preto mate." class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-medium mb-3 text-stone-900">O Refúgio: WC Walk-in</h3>
+            <p class="text-sm text-stone-500 font-light leading-relaxed">Bases niveladas, vãos de 0,80m e acessórios premium que eliminam o aspeto clínico, focando na segurança e no luxo.</p>
+        </article>
+
+        <article class="mt-0 md:mt-24">
+            <div class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-100 mb-6">
+                <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=2080" alt="Quarto amplo com corredor lateral desimpedido e iluminação de orientação." class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-medium mb-3 text-stone-900">Quarto & Domótica</h3>
+            <p class="text-sm text-stone-500 font-light leading-relaxed">Circulação desimpedida e integração de tecnologia inteligente (Smart Home) para controlo de luz e temperatura sem esforço.</p>
+        </article>
+    </div>
+</section>
+
+<section id="materiais" class="bg-[#141414] text-stone-50 py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-stone-800">
+            <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=2070" alt="Close-up de pavimento vinílico contínuo, demonstrando textura antiderrapante e estética natural." class="w-full h-full object-cover opacity-90">
+        </div>
+        <div>
+            <span class="text-xs font-medium tracking-widest uppercase text-stone-400 mb-6 block">Superfícies & Texturas</span>
+            <h2 class="text-3xl md:text-5xl font-medium mb-8 leading-tight">A Materialidade do Conforto Invisível.</h2>
+            <div class="space-y-6 text-stone-400 text-sm md:text-base leading-relaxed font-light mb-12">
+                <p>Optar por <strong>pavimentos contínuos</strong>, como vinílicos premium e cerâmicos antiderrapantes (R10/R11), remove obstáculos visuais e físicos.</p>
+                <p>O uso inteligente de <strong>contrastes cromáticos</strong> entre superfícies orienta naturalmente a circulação, garantindo segurança para todos os residentes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="fiscalidade" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+    <div class="bg-stone-100 rounded-3xl p-8 md:p-16 flex flex-col lg:flex-row gap-12 items-center">
+        <div class="flex-1">
+            <h2 class="text-3xl md:text-4xl font-medium text-stone-900 mb-6">Investimento Inteligente:<br>IVA a 6%</h2>
+            <p class="text-base text-stone-500 mb-8 font-light">
+                Desmistificamos a <strong>Verba 2.27</strong>. Saiba como aplicar a taxa reduzida de IVA em obras de melhoria de acessibilidade ligadas à deficiência.
+            </p>
+            <ul class="space-y-4 text-sm text-stone-600 font-light mb-10">
+                <li class="flex items-center gap-3"><iconify-icon icon="solar:check-circle-linear" class="text-xl text-stone-900"></iconify-icon> Requisito de Incapacidade ≥ 60%.</li>
+                <li class="flex items-center gap-3"><iconify-icon icon="solar:check-circle-linear" class="text-xl text-stone-900"></iconify-icon> Aplicação em Mão-de-Obra e Materiais.</li>
+            </ul>
+            <a href="https://info.portaldasfinancas.gov.pt" target="_blank" class="bg-stone-900 text-stone-50 px-8 py-3 rounded-lg text-sm font-medium hover:bg-stone-800 transition-colors inline-block">Consultar Legislação</a>
+        </div>
+        <div class="flex-1 aspect-square lg:aspect-[4/5] rounded-2xl overflow-hidden grayscale opacity-90 shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069" alt="Escritório de arquitetura minimalista onde se planeiam projetos inclusivos." class="w-full h-full object-cover">
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="py-24 px-6 md:px-12 max-w-3xl mx-auto border-t border-stone-200">
+    <h2 class="text-2xl font-medium text-stone-900 mb-12 text-center">Perguntas Frequentes</h2>
+    <div class="space-y-2">
+        <details class="group border-b border-stone-200">
+            <summary class="flex justify-between items-center py-5 cursor-pointer list-none font-medium text-stone-800 hover:text-stone-500">
+                O que exige o DL 163/2006 na prática?
+                <span class="transition-transform group-open:-rotate-180"><iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon></span>
+            </summary>
+            <div class="text-sm text-stone-500 pb-6 font-light leading-relaxed">
+                Define normas técnicas de acessibilidade em Portugal, como larguras de corredores e rotação de cadeiras de rodas, que traduzimos para design moderno.
+            </div>
+        </details>
+        <details class="group border-b border-stone-200">
+            <summary class="flex justify-between items-center py-5 cursor-pointer list-none font-medium text-stone-800 hover:text-stone-500">
+                O design inclusivo desvaloriza a estética da casa?
+                <span class="transition-transform group-open:-rotate-180"><iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon></span>
+            </summary>
+            <div class="text-sm text-stone-500 pb-6 font-light leading-relaxed">
+                Pelo contrário. O "Universal Design" é uma tendência de luxo que utiliza espaços amplos e domótica, valorizando o imóvel no mercado.
+            </div>
+        </details>
+    </div>
+</section>
+
+<footer class="bg-stone-100 py-12 px-6 text-center border-t border-stone-200">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-xl font-medium tracking-tighter text-stone-900">ESB.</div>
+        <p class="text-xs text-stone-400 font-light">© 2026 Espaços sem Barreiras. Design Inclusivo & Arquitetura.</p>
+        <div class="flex gap-4 text-stone-400">
+            <a href="#" class="hover:text-stone-900 transition-colors"><iconify-icon icon="solar:camera-linear" class="text-xl"></iconify-icon></a>
+            <a href="#" class="hover:text-stone-900 transition-colors"><iconify-icon icon="solar:letter-linear" class="text-xl"></iconify-icon></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
