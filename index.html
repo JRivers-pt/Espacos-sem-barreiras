@@ -70,6 +70,8 @@
             width: auto;
             max-height: 210px;
             object-fit: contain;
+            /* Surgically hide the AI star artifact in the bottom right */
+            clip-path: inset(0 5% 8% 0);
         }
 
         .bg-mesh {
@@ -90,8 +92,6 @@
             <a href="#" aria-label="Início — Cristiana Azevedo Atelier"
                 class="relative flex items-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-champagne-400 focus-visible:ring-offset-2 rounded-sm transform transition hover:scale-[1.01]">
                 <img src="assets/logo.png" alt="Cristiana Azevedo Atelier Logo" class="logo-img h-36 md:h-52">
-                <!-- Final mask for logo ghost - precisely matched to header bg -->
-                <div class="absolute bottom-0 right-0 w-10 h-10 bg-white"></div>
             </a>
 
             <nav class="hidden lg:flex gap-10 items-center">
@@ -377,8 +377,6 @@
                 <div class="mb-12 block relative w-fit">
                     <img src="assets/logo.png" alt="Cristiana Azevedo Atelier Logo"
                         class="logo-img h-36 md:h-48 opacity-90">
-                    <!-- Final mask for logo ghost - matched to footer bg -->
-                    <div class="absolute bottom-0 right-0 w-10 h-10 bg-white"></div>
                 </div>
                 <p class="text-base text-stone-400 font-light leading-loose italic pr-12">
                     "Arquitetura sensível e técnica ao serviço da autonomia humana. A promover o design inclusivo em
