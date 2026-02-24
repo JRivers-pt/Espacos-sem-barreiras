@@ -54,23 +54,17 @@
         details[open]>div {
             animation: fadeIn 0.3s ease-out forwards;
         }
-
-        /* Custom serif for the name to match the refined logo style */
-        .logo-text {
-            font-family: 'Playfair Display', serif;
-            letter-spacing: 0.02em;
-        }
     </style>
 </head>
 
 <body class="bg-stone-50 text-stone-900 antialiased font-sans selection:bg-stone-200 scroll-smooth">
 
-    <header class="fixed top-0 w-full bg-stone-50/80 backdrop-blur-md z-50 border-b border-stone-200/50">
-        <div class="max-w-7xl mx-auto px-6 md:px-12 py-4 flex justify-between items-center">
-            <!-- Logo -->
+    <header class="fixed top-0 w-full bg-stone-50/90 backdrop-blur-md z-50 border-b border-stone-200/50">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-3 flex justify-between items-center">
+            <!-- Logo Stacked & Centered -->
             <a href="#" aria-label="Início — Cristiana Azevedo Atelier"
-                class="flex items-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-stone-900 focus-visible:ring-offset-2 rounded-sm transform transition hover:scale-[1.02]">
-                <svg class="h-12 md:h-16 w-auto" viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                class="flex flex-col items-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-stone-900 focus-visible:ring-offset-2 rounded-sm transform transition hover:scale-[1.02]">
+                <svg class="h-16 md:h-20 w-auto" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
                             <stop offset="0%" stop-color="#BF953F" />
@@ -80,27 +74,30 @@
                             <stop offset="100%" stop-color="#AA771C" />
                         </linearGradient>
                     </defs>
-                    <!-- Monogram CA refined -->
-                    <text x="5" y="65" font-family="'Playfair Display', serif" font-weight="400" font-size="75"
-                        fill="url(#gold-gradient)">C</text>
-                    <text x="45" y="78" font-family="'Playfair Display', serif" font-weight="400" font-style="italic"
-                        font-size="62" fill="url(#gold-gradient)">A</text>
+                    <!-- Monogram CA centered -->
+                    <text x="100" y="55" font-family="'Playfair Display', serif" font-weight="400" font-size="70"
+                        text-anchor="middle" fill="url(#gold-gradient)">C</text>
+                    <text x="118" y="65" font-family="'Playfair Display', serif" font-weight="400" font-style="italic"
+                        font-size="55" text-anchor="middle" fill="url(#gold-gradient)">A</text>
 
-                    <!-- Text aligned right of the monogram -->
-                    <text x="115" y="55" font-family="'Playfair Display', serif" font-weight="400" font-size="22"
-                        fill="url(#gold-gradient)">Cristiana Azevedo</text>
-                    <text x="115" y="78" font-family="'Inter', sans-serif" font-weight="500" font-size="12"
-                        letter-spacing="8" fill="url(#gold-gradient)">ATELIER</text>
+                    <!-- Text centered below -->
+                    <text x="100" y="90" font-family="'Playfair Display', serif" font-weight="400" font-size="18"
+                        text-anchor="middle" fill="url(#gold-gradient)">Cristiana Azevedo</text>
+                    <text x="100" y="110" font-family="'Inter', sans-serif" font-weight="500" font-size="10"
+                        letter-spacing="8" text-anchor="middle" fill="url(#gold-gradient)">ATELIER</text>
                 </svg>
             </a>
 
-            <nav class="hidden md:flex gap-10 items-center">
-                <a href="#ambientes" class="text-sm text-stone-500 hover:text-stone-900 transition-colors">Ambientes</a>
-                <a href="#portfolio" class="text-sm text-stone-500 hover:text-stone-900 transition-colors">Portfolio</a>
-                <a href="#materiais" class="text-sm text-stone-500 hover:text-stone-900 transition-colors">Materiais</a>
+            <nav class="hidden md:flex gap-8 items-center">
+                <a href="#ambientes"
+                    class="text-sm font-medium text-stone-500 hover:text-stone-900 transition-colors">Ambientes</a>
+                <a href="#portfolio"
+                    class="text-sm font-medium text-stone-500 hover:text-stone-900 transition-colors">Portfolio</a>
+                <a href="#materiais"
+                    class="text-sm font-medium text-stone-500 hover:text-stone-900 transition-colors">Materiais</a>
                 <a href="#fiscalidade"
-                    class="text-sm text-stone-500 hover:text-stone-900 transition-colors">Fiscalidade</a>
-                <a href="#faq" class="text-sm text-stone-500 hover:text-stone-900 transition-colors">FAQ</a>
+                    class="text-sm font-medium text-stone-500 hover:text-stone-900 transition-colors">Fiscalidade</a>
+                <a href="#faq" class="text-sm font-medium text-stone-500 hover:text-stone-900 transition-colors">FAQ</a>
             </nav>
             <button class="md:hidden text-stone-900"><iconify-icon icon="solar:hamburger-menu-linear" width="24"
                     height="24"></iconify-icon></button>
@@ -108,7 +105,7 @@
     </header>
 
     <main>
-        <section class="pt-32 pb-16 md:pt-48 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+        <section class="pt-40 pb-16 md:pt-60 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto">
             <div class="flex flex-col items-center text-center max-w-4xl mx-auto mb-16 md:mb-24">
                 <h1
                     class="text-4xl md:text-6xl lg:text-7xl font-medium tracking-tighter text-stone-900 mb-8 leading-tight uppercase">
@@ -308,9 +305,9 @@
     <footer class="bg-stone-100 py-16 px-6 border-t border-stone-200">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
             <div class="max-w-xs">
-                <!-- Refined Logo in Footer -->
+                <!-- Stacked Logo in Footer -->
                 <div class="mb-6 block">
-                    <svg class="h-10 w-auto" viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="h-16 w-auto" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <linearGradient id="gold-gradient-footer" x1="0%" y1="0%" x2="100%" y2="100%">
                                 <stop offset="0%" stop-color="#BF953F" />
@@ -320,14 +317,15 @@
                                 <stop offset="100%" stop-color="#AA771C" />
                             </linearGradient>
                         </defs>
-                        <text x="5" y="65" font-family="'Playfair Display', serif" font-weight="400" font-size="75"
-                            fill="url(#gold-gradient-footer)">C</text>
-                        <text x="45" y="78" font-family="'Playfair Display', serif" font-weight="400"
-                            font-style="italic" font-size="62" fill="url(#gold-gradient-footer)">A</text>
-                        <text x="115" y="55" font-family="'Playfair Display', serif" font-weight="400" font-size="22"
-                            fill="url(#gold-gradient-footer)">Cristiana Azevedo</text>
-                        <text x="115" y="78" font-family="'Inter', sans-serif" font-weight="500" font-size="12"
-                            letter-spacing="8" fill="url(#gold-gradient-footer)">ATELIER</text>
+                        <text x="100" y="55" font-family="'Playfair Display', serif" font-weight="400" font-size="70"
+                            text-anchor="middle" fill="url(#gold-gradient-footer)">C</text>
+                        <text x="118" y="65" font-family="'Playfair Display', serif" font-weight="400"
+                            font-style="italic" font-size="55" text-anchor="middle"
+                            fill="url(#gold-gradient-footer)">A</text>
+                        <text x="100" y="90" font-family="'Playfair Display', serif" font-weight="400" font-size="18"
+                            text-anchor="middle" fill="url(#gold-gradient-footer)">Cristiana Azevedo</text>
+                        <text x="100" y="110" font-family="'Inter', sans-serif" font-weight="500" font-size="10"
+                            letter-spacing="8" text-anchor="middle" fill="url(#gold-gradient-footer)">ATELIER</text>
                     </svg>
                 </div>
                 <p class="text-sm text-stone-500 font-light leading-relaxed">
