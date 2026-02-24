@@ -28,26 +28,24 @@
                         serif: ['Playfair Display', 'serif']
                     },
                     colors: {
+                        champagne: {
+                            50: '#fdfaf6',
+                            100: '#f9f2e7',
+                            200: '#f3e5cf',
+                            300: '#e6cc9f',
+                            400: '#d7ac6d',
+                            500: '#c78d46',
+                        },
+                        blush: {
+                            50: '#fff9f6',
+                            100: '#fbeae3',
+                            200: '#f9dacc',
+                            300: '#f4c0ab',
+                            400: '#eb9b81',
+                        },
                         sage: {
                             50: '#f8faf8',
                             100: '#eef3ee',
-                            200: '#dce6dc',
-                            300: '#c0d0c0',
-                            400: '#9cb19c',
-                            500: '#7a927a',
-                            600: '#5e755e',
-                            700: '#4b5e4b',
-                            800: '#3d4c3d',
-                            900: '#334033',
-                            950: '#1a221a',
-                        },
-                        ivory: {
-                            50: '#fffdfa',
-                            100: '#fdf7f0',
-                            200: '#f7ebd8',
-                            300: '#efd5b3',
-                            400: '#e4b684',
-                            500: '#db995c',
                         }
                     }
                 }
@@ -80,13 +78,13 @@
     </style>
 </head>
 
-<body class="bg-sage-50 text-stone-900 antialiased font-sans selection:bg-sage-200 scroll-smooth">
+<body class="bg-champagne-50 text-stone-800 antialiased font-sans selection:bg-blush-100 scroll-smooth">
 
-    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-sage-100 shadow-sm">
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-champagne-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 md:px-12 py-3 flex justify-between items-center">
             <!-- Original Image Logo -->
             <a href="#" aria-label="Início — Cristiana Azevedo Atelier"
-                class="relative flex items-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sage-900 focus-visible:ring-offset-2 rounded-sm transform transition hover:scale-[1.01]">
+                class="relative flex items-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-champagne-500 focus-visible:ring-offset-2 rounded-sm transform transition hover:scale-[1.01]">
                 <img src="assets/logo.png" alt="Cristiana Azevedo Atelier Logo" class="logo-img h-36 md:h-52">
                 <!-- Mask to hide AI star artifact -->
                 <div class="absolute bottom-0 right-0 w-8 h-8 bg-white/95"></div>
@@ -113,12 +111,12 @@
         <section class="pt-52 pb-16 md:pt-64 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto">
             <div class="flex flex-col items-center text-center max-w-4xl mx-auto mb-16 md:mb-24">
                 <h1
-                    class="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter text-stone-900 mb-8 leading-tight uppercase">
+                    class="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter text-stone-900 mb-8 leading-tight uppercase font-serif">
                     Espaços sem Barreiras</h1>
-                <p class="text-lg md:text-xl text-sage-600 leading-relaxed max-w-2xl font-light italic">
+                <p class="text-lg md:text-xl text-stone-500 leading-relaxed max-w-2xl font-light italic">
                     "Transformar o lugar para libertar a vida."
                 </p>
-                <div class="w-20 h-px bg-sage-200 my-8"></div>
+                <div class="w-20 h-px bg-champagne-200 my-8"></div>
                 <p class="text-base text-stone-400 max-w-2xl font-light leading-loose">
                     Neste espaço, traduzimos a legislação para o mundo do design, mostrando que a acessibilidade é,
                     acima de
@@ -126,7 +124,7 @@
                 </p>
             </div>
             <div
-                class="w-full aspect-[4/3] md:aspect-[21/9] bg-stone-100 rounded-3xl overflow-hidden relative group shadow-2xl shadow-stone-200/50">
+                class="w-full aspect-[4/3] md:aspect-[21/9] bg-white rounded-3xl overflow-hidden relative group shadow-2xl shadow-champagne-100/50">
                 <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075"
                     alt="Sala ampla com luz natural e mobiliário minimalista, demonstrando fluidez espacial e ausência de barreiras."
                     class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -134,10 +132,11 @@
             </div>
         </section>
 
-        <section id="ambientes" class="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-sage-100">
+        <section id="ambientes" class="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-champagne-100">
             <div class="flex flex-col md:flex-row justify-between items-start mb-20 gap-8">
                 <div>
-                    <span class="text-[10px] font-bold tracking-widest uppercase text-stone-400 mb-3 block">Métricas de
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-champagne-400 mb-3 block">Métricas
+                        de
                         Conforto</span>
                     <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-stone-900">Ambientes</h2>
                 </div>
@@ -150,24 +149,24 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
                 <article class="group">
                     <div
-                        class="aspect-[4/5] overflow-hidden rounded-2xl bg-stone-100 mb-8 shadow-lg group-hover:shadow-xl transition-all duration-500">
+                        class="aspect-[4/5] overflow-hidden rounded-2xl bg-white mb-8 shadow-lg group-hover:shadow-xl transition-all duration-500 border border-champagne-50">
                         <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=2070"
                             alt="Cozinha moderna com bancadas suspensas e raio de manobra amplo."
                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     </div>
-                    <h3 class="text-2xl font-medium mb-4 text-stone-900">A Cozinha Fluida</h3>
+                    <h3 class="text-2xl font-medium mb-4 text-stone-900 font-serif">A Cozinha Fluida</h3>
                     <p class="text-sm text-stone-500 font-light leading-relaxed">Foco no raio de rotação livre de 1,50m.
                         Bancadas suspensas (0,70m-0,80m) que aliam funcionalidade extrema a uma estética depurada.</p>
                 </article>
 
                 <article class="group mt-0 md:mt-16">
                     <div
-                        class="aspect-[4/5] overflow-hidden rounded-2xl bg-stone-100 mb-8 shadow-lg group-hover:shadow-xl transition-all duration-500">
+                        class="aspect-[4/5] overflow-hidden rounded-2xl bg-white mb-8 shadow-lg group-hover:shadow-xl transition-all duration-500 border border-champagne-50">
                         <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=2069"
                             alt="Casa de banho walk-in com pavimento contínuo e barras de apoio de design preto mate."
                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     </div>
-                    <h3 class="text-2xl font-medium mb-4 text-stone-900">O Refúgio: WC Walk-in</h3>
+                    <h3 class="text-2xl font-medium mb-4 text-stone-900 font-serif">O Refúgio: WC Walk-in</h3>
                     <p class="text-sm text-stone-500 font-light leading-relaxed">Bases niveladas, vãos de 0,80m e
                         acessórios
                         premium que eliminam o aspeto clínico, focando na segurança e no luxo.</p>
@@ -175,93 +174,95 @@
 
                 <article class="group mt-0 md:mt-32">
                     <div
-                        class="aspect-[4/5] overflow-hidden rounded-2xl bg-stone-100 mb-8 shadow-lg group-hover:shadow-xl transition-all duration-500">
+                        class="aspect-[4/5] overflow-hidden rounded-2xl bg-white mb-8 shadow-lg group-hover:shadow-xl transition-all duration-500 border border-champagne-50">
                         <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=2080"
                             alt="Quarto amplo com corredor lateral desimpedido e iluminação de orientação."
                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     </div>
-                    <h3 class="text-2xl font-medium mb-4 text-stone-900">Quarto & Domótica</h3>
+                    <h3 class="text-2xl font-medium mb-4 text-stone-900 font-serif">Quarto & Domótica</h3>
                     <p class="text-sm text-stone-500 font-light leading-relaxed">Circulação desimpedida e integração de
                         tecnologia inteligente (Smart Home) para controlo de luz e temperatura sem esforço.</p>
                 </article>
             </div>
         </section>
 
-        <section id="portfolio" class="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-sage-100">
+        <section id="portfolio" class="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-champagne-100">
             <div class="mb-20 text-center">
-                <span class="text-[10px] font-bold tracking-widest uppercase text-stone-400 mb-3 block">Diário de
+                <span class="text-[10px] font-bold tracking-widest uppercase text-champagne-400 mb-3 block">Diário de
                     Projeto</span>
                 <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-stone-900">Transformações Reais</h2>
-                <div class="w-12 h-px bg-sage-200 mx-auto my-6"></div>
+                <div class="w-12 h-px bg-champagne-200 mx-auto my-6"></div>
                 <p class="text-stone-500 font-light italic">Atualizado semanalmente com novos estudos de caso.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24">
                 <article class="group relative">
                     <div class="flex gap-4 mb-8">
-                        <div class="flex-1 aspect-square rounded-2xl overflow-hidden bg-stone-100 relative shadow-md">
+                        <div class="flex-1 aspect-square rounded-2xl overflow-hidden bg-white relative shadow-md">
                             <span
                                 class="absolute top-4 left-4 bg-stone-900/90 text-white text-[9px] px-3 py-1 rounded-full uppercase tracking-widest z-10 font-bold">Antes</span>
                             <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=2070"
                                 alt="Cozinha antiga com barreiras"
                                 class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-700">
                         </div>
-                        <div class="flex-1 aspect-square rounded-2xl overflow-hidden bg-stone-100 relative shadow-md">
+                        <div class="flex-1 aspect-square rounded-2xl overflow-hidden bg-white relative shadow-md">
                             <span
-                                class="absolute top-4 left-4 bg-white/90 text-stone-900 text-[9px] px-3 py-1 rounded-full uppercase tracking-widest font-bold z-10">Depois</span>
+                                class="absolute top-4 left-4 bg-black/5 text-stone-900 text-[9px] px-3 py-1 rounded-full uppercase tracking-widest font-bold z-10 backdrop-blur-sm border border-black/5">Depois</span>
                             <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=2070"
                                 alt="Cozinha adaptada moderna" class="w-full h-full object-cover">
                         </div>
                     </div>
-                    <h3 class="text-2xl font-medium text-stone-900 mb-3">Residência em Sintra</h3>
+                    <h3 class="text-2xl font-medium text-stone-900 mb-3 font-serif">Residência em Sintra</h3>
                     <p class="text-base text-stone-500 font-light mb-6 leading-relaxed">Eliminação de armários
                         inferiores
                         para permitir o uso
                         de cadeira de rodas e instalação de bancada regulável.</p>
                     <div class="flex items-center gap-4">
                         <span class="text-[10px] font-bold uppercase tracking-widest text-stone-300">23 Fev 2026</span>
-                        <div class="flex-1 h-px bg-stone-100"></div>
+                        <div class="flex-1 h-px bg-champagne-100"></div>
                     </div>
                 </article>
 
                 <article class="group opacity-30">
                     <div
-                        class="aspect-[1.6/1] flex flex-col items-center justify-center border border-stone-200 rounded-3xl bg-stone-50/50">
-                        <iconify-icon icon="solar:lock-bold" class="text-3xl text-stone-300 mb-4"></iconify-icon>
-                        <p class="text-stone-400 text-[10px] uppercase tracking-[0.2em] font-bold">Projecto em
+                        class="aspect-[1.6/1] flex flex-col items-center justify-center border border-champagne-200 rounded-3xl bg-white/50">
+                        <iconify-icon icon="solar:lock-bold" class="text-3xl text-stone-200 mb-4"></iconify-icon>
+                        <p class="text-stone-300 text-[10px] uppercase tracking-[0.2em] font-bold">Projecto em
                             actualização</p>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section id="materiais" class="bg-sage-900 text-ivory-50 py-32 md:py-48">
+        <section id="materiais" class="bg-stone-900 text-white py-32 md:py-48">
             <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-                <div class="aspect-[4/5] rounded-3xl overflow-hidden bg-sage-800 shadow-2xl">
+                <div class="aspect-[4/5] rounded-3xl overflow-hidden bg-stone-800 shadow-2xl">
                     <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=2070"
                         alt="Close-up de pavimento vinílico contínuo, demonstrando textura antiderrapante e estética natural."
                         class="w-full h-full object-cover opacity-80">
                 </div>
                 <div class="max-w-xl">
-                    <span class="text-[10px] font-bold tracking-widest uppercase text-sage-400 mb-8 block">Superfícies &
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-stone-500 mb-8 block">Superfícies
+                        &
                         Texturas</span>
-                    <h2 class="text-4xl md:text-6xl font-medium mb-12 leading-tight">A Materialidade do Conforto
+                    <h2 class="text-4xl md:text-6xl font-medium mb-12 leading-tight font-serif">A Materialidade do
+                        Conforto
                         Invisível.</h2>
-                    <div class="space-y-8 text-sage-200 text-base md:text-lg leading-relaxed font-light mb-16">
+                    <div class="space-y-8 text-stone-400 text-base md:text-lg leading-relaxed font-light mb-16">
                         <p>Optar por <strong>pavimentos contínuos</strong>, como vinílicos premium e cerâmicos
                             antiderrapantes (R10/R11), remove obstáculos visuais e físicos.</p>
                         <p>O uso inteligente de <strong>contrastes cromáticos</strong> entre superfícies orienta
                             naturalmente a circulação, garantindo segurança para todos os residentes.</p>
                     </div>
-                    <div class="w-16 h-px bg-sage-700"></div>
+                    <div class="w-16 h-px bg-stone-700"></div>
                 </div>
             </div>
         </section>
 
-        <section id="fiscalidade" class="py-32 px-6 md:px-12 max-w-7xl mx-auto border-t border-sage-100">
+        <section id="fiscalidade" class="py-32 px-6 md:px-12 max-w-7xl mx-auto border-t border-champagne-100">
             <div class="mb-20">
-                <span class="text-[10px] font-bold tracking-widest uppercase text-stone-400 mb-3 block">Guia Técnico &
-                    Legal</span>
+                <span class="text-[10px] font-bold tracking-widest uppercase text-champagne-400 mb-3 block">Guia Técnico
+                    & Legal</span>
                 <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-stone-900">Fiscalidade</h2>
             </div>
 
@@ -338,11 +339,12 @@
         </section>
 
         <section id="faq" class="py-32 px-6 md:px-12 max-w-3xl mx-auto">
-            <h2 class="text-3xl font-medium text-stone-900 mb-16 text-center uppercase tracking-widest">FAQ</h2>
+            <h2 class="text-3xl font-medium text-stone-900 mb-16 text-center uppercase tracking-widest font-serif">FAQ
+            </h2>
             <div class="space-y-4">
-                <details class="group border-b border-sage-100 pb-2">
+                <details class="group border-b border-champagne-100 pb-2">
                     <summary
-                        class="flex justify-between items-center py-6 cursor-pointer list-none font-medium text-stone-800 hover:text-stone-500 transition-colors">
+                        class="flex justify-between items-center py-6 cursor-pointer list-none font-medium text-stone-800 hover:text-champagne-500 transition-colors">
                         O que exige o DL 163/2006 na prática?
                         <span class="transition-transform group-open:-rotate-180 opacity-50"><iconify-icon
                                 icon="solar:alt-arrow-down-linear"></iconify-icon></span>
@@ -352,9 +354,9 @@
                         cadeiras de rodas, que traduzimos para design moderno.
                     </div>
                 </details>
-                <details class="group border-b border-sage-100 pb-2">
+                <details class="group border-b border-champagne-100 pb-2">
                     <summary
-                        class="flex justify-between items-center py-6 cursor-pointer list-none font-medium text-stone-800 hover:text-stone-500 transition-colors">
+                        class="flex justify-between items-center py-6 cursor-pointer list-none font-medium text-stone-800 hover:text-champagne-500 transition-colors">
                         O design inclusivo desvaloriza a estética?
                         <span class="transition-transform group-open:-rotate-180 opacity-50"><iconify-icon
                                 icon="solar:alt-arrow-down-linear"></iconify-icon></span>
@@ -369,7 +371,7 @@
         </section>
     </main>
 
-    <footer class="bg-white py-24 px-6 border-t border-sage-50">
+    <footer class="bg-white py-24 px-6 border-t border-champagne-100">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-20">
             <div class="max-w-sm">
                 <!-- Original Image Logo in Footer -->
@@ -390,7 +392,7 @@
                     <ul class="space-y-6 text-xs text-stone-400 font-medium uppercase tracking-widest">
                         <li><a href="#ambientes" class="hover:text-stone-900 transition-colors">Ambientes</a></li>
                         <li><a href="#portfolio" class="hover:text-stone-900 transition-colors">Portfolio</a></li>
-                        <li><a href="#materiais" class="hover:text-ivory-100 transition-colors">Materials</a></li>
+                        <li><a href="#materiais" class="hover:text-stone-900 transition-colors">Materials</a></li>
                     </ul>
                 </div>
                 <div>
@@ -410,7 +412,7 @@
             </div>
         </div>
         <div
-            class="max-w-7xl mx-auto mt-32 pt-12 border-t border-sage-100 flex flex-col sm:flex-row justify-between items-center gap-6 text-[9px] text-stone-300 uppercase tracking-[0.2em] font-bold">
+            class="max-w-7xl mx-auto mt-32 pt-12 border-t border-champagne-100 flex flex-col sm:flex-row justify-between items-center gap-6 text-[9px] text-stone-300 uppercase tracking-[0.2em] font-bold">
             <p>© 2026 Cristiana Azevedo Atelier. Direitos Reservados.</p>
             <div class="flex gap-12">
                 <a href="#" class="hover:text-stone-900 transition-colors">Privacidade</a>
