@@ -59,67 +59,85 @@
 
 <body class="bg-stone-50 text-stone-900 antialiased font-sans selection:bg-stone-200 scroll-smooth">
 
-    <header class="fixed top-0 w-full bg-stone-50/90 backdrop-blur-md z-50 border-b border-stone-200/50">
-        <div class="max-w-7xl mx-auto px-6 md:px-12 py-3 flex justify-between items-center">
-            <!-- Logo Stacked & Centered -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-stone-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-4 flex justify-between items-center">
+            <!-- Polished Professional Logo -->
             <a href="#" aria-label="Início — Cristiana Azevedo Atelier"
-                class="flex flex-col items-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-stone-900 focus-visible:ring-offset-2 rounded-sm transform transition hover:scale-[1.02]">
-                <svg class="h-16 md:h-20 w-auto" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                class="flex flex-col items-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-stone-900 focus-visible:ring-offset-2 rounded-sm transform transition hover:scale-[1.01]">
+                <svg class="h-20 md:h-24 w-auto" viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
-                        <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#BF953F" />
-                            <stop offset="25%" stop-color="#FCF6BA" />
-                            <stop offset="50%" stop-color="#B38728" />
-                            <stop offset="75%" stop-color="#FBF5B7" />
-                            <stop offset="100%" stop-color="#AA771C" />
+                        <linearGradient id="gold-gradient-pro" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#D4AF37" /> <!-- Metallic Gold -->
+                            <stop offset="20%" stop-color="#F5E095" /> <!-- High Light -->
+                            <stop offset="40%" stop-color="#A67C00" /> <!-- Dark Shadow Area -->
+                            <stop offset="60%" stop-color="#F5E095" /> <!-- High Light -->
+                            <stop offset="80%" stop-color="#806000" /> <!-- Deep Shadow -->
+                            <stop offset="100%" stop-color="#D4AF37" /> <!-- Finish -->
                         </linearGradient>
+                        <filter id="subtle-glow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="1" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
                     </defs>
-                    <!-- Monogram CA centered -->
-                    <text x="100" y="55" font-family="'Playfair Display', serif" font-weight="400" font-size="70"
-                        text-anchor="middle" fill="url(#gold-gradient)">C</text>
-                    <text x="118" y="65" font-family="'Playfair Display', serif" font-weight="400" font-style="italic"
-                        font-size="55" text-anchor="middle" fill="url(#gold-gradient)">A</text>
 
-                    <!-- Text centered below -->
-                    <text x="100" y="90" font-family="'Playfair Display', serif" font-weight="400" font-size="18"
-                        text-anchor="middle" fill="url(#gold-gradient)">Cristiana Azevedo</text>
-                    <text x="100" y="110" font-family="'Inter', sans-serif" font-weight="500" font-size="10"
-                        letter-spacing="8" text-anchor="middle" fill="url(#gold-gradient)">ATELIER</text>
+                    <!-- Monogram CA centered with refined positioning -->
+                    <g filter="url(#subtle-glow)">
+                        <text x="110" y="65" font-family="'Playfair Display', serif" font-weight="400" font-size="85"
+                            text-anchor="middle" fill="url(#gold-gradient-pro)">C</text>
+                        <text x="132" y="78" font-family="'Playfair Display', serif" font-weight="400"
+                            font-style="italic" font-size="65" text-anchor="middle"
+                            fill="url(#gold-gradient-pro)">A</text>
+
+                        <!-- Connecting tail effect for A -->
+                        <path d="M 125 78 Q 145 85 160 70" stroke="url(#gold-gradient-pro)" stroke-width="1.5"
+                            fill="none" />
+                    </g>
+
+                    <!-- Typography centered below -->
+                    <text x="120" y="108" font-family="'Playfair Display', serif" font-weight="400" font-size="18"
+                        text-anchor="middle" fill="url(#gold-gradient-pro)" letter-spacing="0.5">Cristiana
+                        Azevedo</text>
+                    <text x="120" y="128" font-family="'Inter', sans-serif" font-weight="600" font-size="9"
+                        text-anchor="middle" fill="url(#gold-gradient-pro)" letter-spacing="10">ATELIER</text>
                 </svg>
             </a>
 
-            <nav class="hidden md:flex gap-8 items-center">
+            <nav class="hidden lg:flex gap-10 items-center">
                 <a href="#ambientes"
-                    class="text-sm font-medium text-stone-500 hover:text-stone-900 transition-colors">Ambientes</a>
+                    class="text-xs uppercase tracking-widest font-semibold text-stone-400 hover:text-stone-900 transition-colors">Ambientes</a>
                 <a href="#portfolio"
-                    class="text-sm font-medium text-stone-500 hover:text-stone-900 transition-colors">Portfolio</a>
+                    class="text-xs uppercase tracking-widest font-semibold text-stone-400 hover:text-stone-900 transition-colors">Portfolio</a>
                 <a href="#materiais"
-                    class="text-sm font-medium text-stone-500 hover:text-stone-900 transition-colors">Materiais</a>
+                    class="text-xs uppercase tracking-widest font-semibold text-stone-400 hover:text-stone-900 transition-colors">Materiais</a>
                 <a href="#fiscalidade"
-                    class="text-sm font-medium text-stone-500 hover:text-stone-900 transition-colors">Fiscalidade</a>
-                <a href="#faq" class="text-sm font-medium text-stone-500 hover:text-stone-900 transition-colors">FAQ</a>
+                    class="text-xs uppercase tracking-widest font-semibold text-stone-400 hover:text-stone-900 transition-colors">Fiscalidade</a>
+                <a href="#faq"
+                    class="text-xs uppercase tracking-widest font-semibold text-stone-400 hover:text-stone-900 transition-colors">FAQ</a>
             </nav>
-            <button class="md:hidden text-stone-900"><iconify-icon icon="solar:hamburger-menu-linear" width="24"
-                    height="24"></iconify-icon></button>
+            <button class="lg:hidden text-stone-900 pt-2"><iconify-icon icon="solar:hamburger-menu-linear" width="28"
+                    height="28"></iconify-icon></button>
         </div>
     </header>
 
     <main>
-        <section class="pt-40 pb-16 md:pt-60 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+        <!-- Adjusted padding for larger header -->
+        <section class="pt-52 pb-16 md:pt-64 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto">
             <div class="flex flex-col items-center text-center max-w-4xl mx-auto mb-16 md:mb-24">
                 <h1
-                    class="text-4xl md:text-6xl lg:text-7xl font-medium tracking-tighter text-stone-900 mb-8 leading-tight uppercase">
+                    class="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter text-stone-900 mb-8 leading-tight uppercase">
                     Espaços sem Barreiras</h1>
                 <p class="text-lg md:text-xl text-stone-500 leading-relaxed max-w-2xl font-light italic">
                     "Transformar o lugar para libertar a vida."
                 </p>
-                <p class="mt-6 text-base text-stone-400 max-w-2xl font-light">
+                <div class="w-20 h-px bg-stone-200 my-8"></div>
+                <p class="text-base text-stone-400 max-w-2xl font-light leading-loose">
                     Neste espaço, traduzimos a legislação para o mundo do design, mostrando que a acessibilidade é,
                     acima de
                     tudo, uma forma superior de conforto para todos.
                 </p>
             </div>
-            <div class="w-full aspect-[4/3] md:aspect-[21/9] bg-stone-200 rounded-2xl overflow-hidden relative group">
+            <div
+                class="w-full aspect-[4/3] md:aspect-[21/9] bg-stone-100 rounded-3xl overflow-hidden relative group shadow-2xl shadow-stone-200/50">
                 <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075"
                     alt="Sala ampla com luz natural e mobiliário minimalista, demonstrando fluidez espacial e ausência de barreiras."
                     class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -127,142 +145,159 @@
             </div>
         </section>
 
-        <section id="ambientes" class="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-stone-200">
-            <div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-4">
+        <section id="ambientes" class="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-stone-100">
+            <div class="flex flex-col md:flex-row justify-between items-start mb-20 gap-8">
                 <div>
-                    <span class="text-xs font-medium tracking-widest uppercase text-stone-400 mb-2 block">Métricas de
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-stone-400 mb-3 block">Métricas de
                         Conforto</span>
-                    <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-stone-900">Ambientes</h2>
+                    <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-stone-900">Ambientes</h2>
                 </div>
-                <p class="text-sm text-stone-500 max-w-xs md:text-right">A ergonomia invisível que garante autonomy em
-                    cada
+                <p class="text-sm text-stone-500 max-w-xs md:text-right leading-relaxed italic">A ergonomia invisível
+                    que garante autonomy em cada
                     divisão.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-                <article>
-                    <div class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-100 mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
+                <article class="group">
+                    <div
+                        class="aspect-[4/5] overflow-hidden rounded-2xl bg-stone-100 mb-8 shadow-lg group-hover:shadow-xl transition-all duration-500">
                         <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=2070"
                             alt="Cozinha moderna com bancadas suspensas e raio de manobra amplo."
-                            class="w-full h-full object-cover">
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     </div>
-                    <h3 class="text-xl font-medium mb-3 text-stone-900">A Cozinha Fluida</h3>
+                    <h3 class="text-2xl font-medium mb-4 text-stone-900">A Cozinha Fluida</h3>
                     <p class="text-sm text-stone-500 font-light leading-relaxed">Foco no raio de rotação livre de 1,50m.
                         Bancadas suspensas (0,70m-0,80m) que aliam funcionalidade extrema a uma estética depurada.</p>
                 </article>
 
-                <article class="mt-0 md:mt-12">
-                    <div class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-100 mb-6">
+                <article class="group mt-0 md:mt-16">
+                    <div
+                        class="aspect-[4/5] overflow-hidden rounded-2xl bg-stone-100 mb-8 shadow-lg group-hover:shadow-xl transition-all duration-500">
                         <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=2069"
                             alt="Casa de banho walk-in com pavimento contínuo e barras de apoio de design preto mate."
-                            class="w-full h-full object-cover">
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     </div>
-                    <h3 class="text-xl font-medium mb-3 text-stone-900">O Refúgio: WC Walk-in</h3>
+                    <h3 class="text-2xl font-medium mb-4 text-stone-900">O Refúgio: WC Walk-in</h3>
                     <p class="text-sm text-stone-500 font-light leading-relaxed">Bases niveladas, vãos de 0,80m e
                         acessórios
                         premium que eliminam o aspeto clínico, focando na segurança e no luxo.</p>
                 </article>
 
-                <article class="mt-0 md:mt-24">
-                    <div class="aspect-[4/5] overflow-hidden rounded-xl bg-stone-100 mb-6">
+                <article class="group mt-0 md:mt-32">
+                    <div
+                        class="aspect-[4/5] overflow-hidden rounded-2xl bg-stone-100 mb-8 shadow-lg group-hover:shadow-xl transition-all duration-500">
                         <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=2080"
                             alt="Quarto amplo com corredor lateral desimpedido e iluminação de orientação."
-                            class="w-full h-full object-cover">
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     </div>
-                    <h3 class="text-xl font-medium mb-3 text-stone-900">Quarto & Domótica</h3>
+                    <h3 class="text-2xl font-medium mb-4 text-stone-900">Quarto & Domótica</h3>
                     <p class="text-sm text-stone-500 font-light leading-relaxed">Circulação desimpedida e integração de
                         tecnologia inteligente (Smart Home) para controlo de luz e temperatura sem esforço.</p>
                 </article>
             </div>
         </section>
 
-        <section id="portfolio" class="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-stone-200">
-            <div class="mb-16 text-center">
-                <span class="text-xs font-medium tracking-widest uppercase text-stone-400 mb-2 block">Diário de
+        <section id="portfolio" class="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-stone-100">
+            <div class="mb-20 text-center">
+                <span class="text-[10px] font-bold tracking-widest uppercase text-stone-400 mb-3 block">Diário de
                     Projeto</span>
-                <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-stone-900">Transformações Reais</h2>
-                <p class="mt-4 text-stone-500 font-light italic">Atualizado semanalmente com novos estudos de caso.</p>
+                <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-stone-900">Transformações Reais</h2>
+                <div class="w-12 h-px bg-stone-200 mx-auto my-6"></div>
+                <p class="text-stone-500 font-light italic">Atualizado semanalmente com novos estudos de caso.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <article class="group">
-                    <div class="flex gap-2 mb-6">
-                        <div class="flex-1 aspect-square rounded-xl overflow-hidden bg-stone-200 relative">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24">
+                <article class="group relative">
+                    <div class="flex gap-4 mb-8">
+                        <div class="flex-1 aspect-square rounded-2xl overflow-hidden bg-stone-100 relative shadow-md">
                             <span
-                                class="absolute top-2 left-2 bg-stone-900/80 text-white text-[10px] px-2 py-1 rounded uppercase tracking-widest z-10">Antes</span>
+                                class="absolute top-4 left-4 bg-stone-900/90 text-white text-[9px] px-3 py-1 rounded-full uppercase tracking-widest z-10 font-bold">Antes</span>
                             <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=2070"
-                                alt="Cozinha antiga com barreiras" class="w-full h-full object-cover grayscale">
+                                alt="Cozinha antiga com barreiras"
+                                class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-700">
                         </div>
-                        <div class="flex-1 aspect-square rounded-xl overflow-hidden bg-stone-200 relative">
+                        <div class="flex-1 aspect-square rounded-2xl overflow-hidden bg-stone-100 relative shadow-md">
                             <span
-                                class="absolute top-2 left-2 bg-stone-50/90 text-stone-900 text-[10px] px-2 py-1 rounded uppercase tracking-widest font-bold z-10">Depois</span>
+                                class="absolute top-4 left-4 bg-white/90 text-stone-900 text-[9px] px-3 py-1 rounded-full uppercase tracking-widest font-bold z-10">Depois</span>
                             <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=2070"
                                 alt="Cozinha adaptada moderna" class="w-full h-full object-cover">
                         </div>
                     </div>
-                    <h3 class="text-lg font-medium text-stone-900 mb-2">Residência em Sintra: Cozinha Acessível</h3>
-                    <p class="text-sm text-stone-500 font-light mb-4">Eliminação de armários inferiores para permitir o
-                        uso
+                    <h3 class="text-2xl font-medium text-stone-900 mb-3">Residência em Sintra</h3>
+                    <p class="text-base text-stone-500 font-light mb-6 leading-relaxed">Eliminação de armários
+                        inferiores para permitir o uso
                         de cadeira de rodas e instalação de bancada regulável.</p>
-                    <span class="text-xs text-stone-400">23 de Fevereiro, 2026</span>
+                    <div class="flex items-center gap-4">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-stone-300">23 Fev 2026</span>
+                        <div class="flex-1 h-px bg-stone-100"></div>
+                    </div>
                 </article>
 
-                <article class="group opacity-40">
+                <article class="group opacity-30">
                     <div
-                        class="aspect-[16/9] flex items-center justify-center border-2 border-dashed border-stone-200 rounded-xl">
-                        <p class="text-stone-400 text-sm italic">Próxima transformação em breve...</p>
+                        class="aspect-[1.6/1] flex flex-col items-center justify-center border border-stone-200 rounded-3xl bg-stone-50/50">
+                        <iconify-icon icon="solar:lock-bold" class="text-3xl text-stone-300 mb-4"></iconify-icon>
+                        <p class="text-stone-400 text-[10px] uppercase tracking-[0.2em] font-bold">Projecto em
+                            actualização</p>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section id="materiais" class="bg-[#141414] text-stone-50 py-24 md:py-32">
-            <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-stone-800">
+        <section id="materiais" class="bg-stone-900 text-stone-50 py-32 md:py-48">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                <div class="aspect-[4/5] rounded-3xl overflow-hidden bg-stone-800 shadow-2xl">
                     <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=2070"
                         alt="Close-up de pavimento vinílico contínuo, demonstrando textura antiderrapante e estética natural."
-                        class="w-full h-full object-cover opacity-90">
+                        class="w-full h-full object-cover opacity-80">
                 </div>
-                <div>
-                    <span class="text-xs font-medium tracking-widest uppercase text-stone-400 mb-6 block">Superfícies &
-                        Texturas</span>
-                    <h2 class="text-3xl md:text-5xl font-medium mb-8 leading-tight">A Materialidade do Conforto
-                        Invisível.
-                    </h2>
-                    <div class="space-y-6 text-stone-400 text-sm md:text-base leading-relaxed font-light mb-12">
+                <div class="max-w-xl">
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-stone-500 mb-8 block">Superfícies
+                        & Texturas</span>
+                    <h2 class="text-4xl md:text-6xl font-medium mb-12 leading-tight">A Materialidade do Conforto
+                        Invisível.</h2>
+                    <div class="space-y-8 text-stone-400 text-base md:text-lg leading-relaxed font-light mb-16">
                         <p>Optar por <strong>pavimentos contínuos</strong>, como vinílicos premium e cerâmicos
                             antiderrapantes (R10/R11), remove obstáculos visuais e físicos.</p>
                         <p>O uso inteligente de <strong>contrastes cromáticos</strong> entre superfícies orienta
                             naturalmente a circulação, garantindo segurança para todos os residentes.</p>
                     </div>
+                    <div class="w-16 h-px bg-stone-700"></div>
                 </div>
             </div>
         </section>
 
-        <section id="fiscalidade" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
-            <div class="bg-stone-100 rounded-3xl p-8 md:p-16 flex flex-col lg:flex-row gap-12 items-center">
+        <section id="fiscalidade" class="py-32 px-6 md:px-12 max-w-7xl mx-auto">
+            <div
+                class="bg-white border border-stone-100 rounded-[3rem] p-10 md:p-24 flex flex-col lg:flex-row gap-20 items-center shadow-xl shadow-stone-200/40">
                 <div class="flex-1">
-                    <h2 class="text-3xl md:text-4xl font-medium text-stone-900 mb-6">Investimento Inteligente:<br>IVA a
-                        6%
-                    </h2>
-                    <p class="text-base text-stone-500 mb-8 font-light">
+                    <h2 class="text-4xl md:text-5xl font-medium text-stone-900 mb-8 leading-tight">Investimento:<br>Taxa
+                        IVA 6%</h2>
+                    <p class="text-lg text-stone-500 mb-12 font-light leading-relaxed">
                         Desmistificamos a <strong>Verba 2.27</strong>. Saiba como aplicar a taxa reduzida de IVA em
                         obras de
                         melhoria de acessibilidade ligadas à deficiência.
                     </p>
-                    <ul class="space-y-4 text-sm text-stone-600 font-light mb-10">
-                        <li class="flex items-center gap-3"><iconify-icon icon="solar:check-circle-linear"
-                                class="text-xl text-stone-900"></iconify-icon> Requisito de Incapacidade ≥ 60%.</li>
-                        <li class="flex items-center gap-3"><iconify-icon icon="solar:check-circle-linear"
-                                class="text-xl text-stone-900"></iconify-icon> Aplicação em Mão-de-Obra e Materiais.
+                    <ul class="space-y-6 text-sm text-stone-600 font-light mb-16">
+                        <li class="flex items-center gap-4">
+                            <div class="w-6 h-6 rounded-full bg-stone-900 flex items-center justify-center">
+                                <iconify-icon icon="solar:check-read-linear" class="text-white text-xs"></iconify-icon>
+                            </div>
+                            <span>Requisito de Incapacidade ≥ 60%</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-6 h-6 rounded-full bg-stone-900 flex items-center justify-center">
+                                <iconify-icon icon="solar:check-read-linear" class="text-white text-xs"></iconify-icon>
+                            </div>
+                            <span>Aplicação em Mão-de-Obra e Materiais</span>
                         </li>
                     </ul>
                     <a href="https://info.portaldasfinancas.gov.pt" target="_blank"
-                        class="bg-stone-900 text-stone-50 px-8 py-3 rounded-lg text-sm font-medium hover:bg-stone-800 transition-colors inline-block">Consultar
+                        class="bg-stone-900 text-white px-10 py-4 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-stone-800 transition-all shadow-lg shadow-stone-900/20 inline-block">Consultar
                         Legislação</a>
                 </div>
                 <div
-                    class="flex-1 aspect-square lg:aspect-[4/5] rounded-2xl overflow-hidden grayscale opacity-90 shadow-2xl">
+                    class="flex-1 aspect-[4/5] rounded-[2rem] overflow-hidden grayscale opacity-80 shadow-2xl transform lg:rotate-2">
                     <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069"
                         alt="Escritório de arquitetura minimalista onde se planeiam projetos inclusivos."
                         class="w-full h-full object-cover">
@@ -270,97 +305,97 @@
             </div>
         </section>
 
-        <section id="faq" class="py-24 px-6 md:px-12 max-w-3xl mx-auto border-t border-stone-200">
-            <h2 class="text-2xl font-medium text-stone-900 mb-12 text-center">Perguntas Frequentes</h2>
-            <div class="space-y-2">
-                <details class="group border-b border-stone-200">
+        <section id="faq" class="py-32 px-6 md:px-12 max-w-3xl mx-auto">
+            <h2 class="text-3xl font-medium text-stone-900 mb-16 text-center uppercase tracking-widest">FAQ</h2>
+            <div class="space-y-4">
+                <details class="group border-b border-stone-100 pb-2">
                     <summary
-                        class="flex justify-between items-center py-5 cursor-pointer list-none font-medium text-stone-800 hover:text-stone-500">
+                        class="flex justify-between items-center py-6 cursor-pointer list-none font-medium text-stone-800 hover:text-stone-500 transition-colors">
                         O que exige o DL 163/2006 na prática?
-                        <span class="transition-transform group-open:-rotate-180"><iconify-icon
+                        <span class="transition-transform group-open:-rotate-180 opacity-50"><iconify-icon
                                 icon="solar:alt-arrow-down-linear"></iconify-icon></span>
                     </summary>
-                    <div class="text-sm text-stone-500 pb-6 font-light leading-relaxed">
+                    <div class="text-sm text-stone-400 pb-8 font-light leading-relaxed">
                         Define normas técnicas de acessibilidade em Portugal, como larguras de corredores e rotação de
                         cadeiras de rodas, que traduzimos para design moderno.
                     </div>
                 </details>
-                <details class="group border-b border-stone-200">
+                <details class="group border-b border-stone-100 pb-2">
                     <summary
-                        class="flex justify-between items-center py-5 cursor-pointer list-none font-medium text-stone-800 hover:text-stone-500">
-                        O design inclusivo desvaloriza a estética da casa?
-                        <span class="transition-transform group-open:-rotate-180"><iconify-icon
+                        class="flex justify-between items-center py-6 cursor-pointer list-none font-medium text-stone-800 hover:text-stone-500 transition-colors">
+                        O design inclusivo desvaloriza a estética?
+                        <span class="transition-transform group-open:-rotate-180 opacity-50"><iconify-icon
                                 icon="solar:alt-arrow-down-linear"></iconify-icon></span>
                     </summary>
-                    <div class="text-sm text-stone-500 pb-6 font-light leading-relaxed">
-                        Pelo contrário. O "Universal Design" é uma tendência de luxo que utiliza espaços amplos e
+                    <div class="text-sm text-stone-400 pb-8 font-light leading-relaxed">
+                        Pelo contrário. O "Universal Design" é uma tendência global de luxo que utiliza espaços amplos e
                         domótica,
-                        valorizando o imóvel no mercado.
+                        valorizando o imóvel no mercado contemporâneo.
                     </div>
                 </details>
             </div>
         </section>
     </main>
 
-    <footer class="bg-stone-100 py-16 px-6 border-t border-stone-200">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
-            <div class="max-w-xs">
-                <!-- Stacked Logo in Footer -->
-                <div class="mb-6 block">
-                    <svg class="h-16 w-auto" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <footer class="bg-white py-24 px-6 border-t border-stone-50">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-20">
+            <div class="max-w-sm">
+                <!-- Final Polished Header Logo in Footer -->
+                <div class="mb-10 block">
+                    <svg class="h-24 w-auto" viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <defs>
-                            <linearGradient id="gold-gradient-footer" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#BF953F" />
-                                <stop offset="25%" stop-color="#FCF6BA" />
-                                <stop offset="50%" stop-color="#B38728" />
-                                <stop offset="75%" stop-color="#FBF5B7" />
-                                <stop offset="100%" stop-color="#AA771C" />
+                            <linearGradient id="gold-gradient-footer-pro" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#D4AF37" />
+                                <stop offset="50%" stop-color="#F5E095" />
+                                <stop offset="100%" stop-color="#D4AF37" />
                             </linearGradient>
                         </defs>
-                        <text x="100" y="55" font-family="'Playfair Display', serif" font-weight="400" font-size="70"
-                            text-anchor="middle" fill="url(#gold-gradient-footer)">C</text>
-                        <text x="118" y="65" font-family="'Playfair Display', serif" font-weight="400"
-                            font-style="italic" font-size="55" text-anchor="middle"
-                            fill="url(#gold-gradient-footer)">A</text>
-                        <text x="100" y="90" font-family="'Playfair Display', serif" font-weight="400" font-size="18"
-                            text-anchor="middle" fill="url(#gold-gradient-footer)">Cristiana Azevedo</text>
-                        <text x="100" y="110" font-family="'Inter', sans-serif" font-weight="500" font-size="10"
-                            letter-spacing="8" text-anchor="middle" fill="url(#gold-gradient-footer)">ATELIER</text>
+                        <text x="120" y="65" font-family="'Playfair Display', serif" font-weight="400" font-size="85"
+                            text-anchor="middle" fill="url(#gold-gradient-footer-pro)">C</text>
+                        <text x="142" y="78" font-family="'Playfair Display', serif" font-weight="400"
+                            font-style="italic" font-size="65" text-anchor="middle"
+                            fill="url(#gold-gradient-footer-pro)">A</text>
+                        <text x="120" y="108" font-family="'Playfair Display', serif" font-weight="400" font-size="18"
+                            text-anchor="middle" fill="url(#gold-gradient-footer-pro)">Cristiana Azevedo</text>
+                        <text x="120" y="128" font-family="'Inter', sans-serif" font-weight="600" font-size="9"
+                            text-anchor="middle" fill="url(#gold-gradient-footer-pro)"
+                            letter-spacing="10">ATELIER</text>
                     </svg>
                 </div>
-                <p class="text-sm text-stone-500 font-light leading-relaxed">
-                    A promover acessibilidade e design inclusivo em Portugal. Transformamos espaços, melhoramos vidas
-                    através de um olhar arquitetónico sensível e técnico.
+                <p class="text-sm text-stone-400 font-light leading-loose">
+                    Arquitetura sensível e técnica ao serviço da autonomia humana. A promover o design inclusivo em
+                    Portugal com rigor e sofisticação desde 2010.
                 </p>
             </div>
-            <div class="flex flex-col md:flex-row gap-12 md:gap-24">
+            <div class="flex flex-col md:flex-row gap-16 md:gap-32">
                 <div>
-                    <h4 class="text-stone-900 font-semibold mb-6 text-sm uppercase tracking-widest">Atelier</h4>
-                    <ul class="space-y-4 text-sm text-stone-500 font-light">
+                    <h4 class="text-stone-900 text-[10px] font-bold mb-10 uppercase tracking-[0.3em]">Atelier</h4>
+                    <ul class="space-y-6 text-xs text-stone-400 font-medium uppercase tracking-widest">
                         <li><a href="#ambientes" class="hover:text-stone-900 transition-colors">Ambientes</a></li>
                         <li><a href="#portfolio" class="hover:text-stone-900 transition-colors">Portfolio</a></li>
                         <li><a href="#materiais" class="hover:text-stone-900 transition-colors">Materiais</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-stone-900 font-semibold mb-6 text-sm uppercase tracking-widest">Contacto</h4>
-                    <ul class="space-y-4 text-sm text-stone-500 font-light">
+                    <h4 class="text-stone-900 text-[10px] font-bold mb-10 uppercase tracking-[0.3em]">Contacto</h4>
+                    <ul class="space-y-6 text-xs text-stone-400 font-medium">
                         <li><a href="mailto:geral@cristianaazevedo.pt"
-                                class="hover:text-stone-900 transition-colors">geral@cristianaazevedo.pt</a></li>
-                        <li class="flex gap-4 pt-2">
-                            <a href="#" class="text-stone-400 hover:text-stone-900 transition-colors"><iconify-icon
-                                    icon="solar:camera-linear" class="text-xl"></iconify-icon></a>
-                            <a href="#" class="text-stone-400 hover:text-stone-900 transition-colors"><iconify-icon
-                                    icon="solar:letter-linear" class="text-xl"></iconify-icon></a>
+                                class="hover:text-stone-900 transition-colors uppercase tracking-widest">geral@cristianaazevedo.pt</a>
+                        </li>
+                        <li class="flex gap-6 pt-4">
+                            <a href="#" class="text-stone-300 hover:text-stone-900 transition-colors"><iconify-icon
+                                    icon="solar:camera-linear" class="text-2xl"></iconify-icon></a>
+                            <a href="#" class="text-stone-300 hover:text-stone-900 transition-colors"><iconify-icon
+                                    icon="solar:letter-linear" class="text-2xl"></iconify-icon></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div
-            class="max-w-7xl mx-auto mt-16 pt-8 border-t border-stone-200 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] text-stone-400 uppercase tracking-widest font-medium">
-            <p>© 2026 Cristiana Azevedo Atelier. Todos os direitos reservados.</p>
-            <div class="flex gap-8">
+            class="max-w-7xl mx-auto mt-32 pt-12 border-t border-stone-50 flex flex-col sm:flex-row justify-between items-center gap-6 text-[9px] text-stone-300 uppercase tracking-[0.2em] font-bold">
+            <p>© 2026 Cristiana Azevedo Atelier. Direitos Reservados.</p>
+            <div class="flex gap-12">
                 <a href="#" class="hover:text-stone-900 transition-colors">Privacidade</a>
                 <a href="#" class="hover:text-stone-900 transition-colors">Termos</a>
             </div>
