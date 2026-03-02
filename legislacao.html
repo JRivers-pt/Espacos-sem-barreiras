@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaços sem Barreiras - Design Inclusivo & Arquitetura</title>
+
+    <meta name="description"
+        content="Guia de Design Inclusivo e Acessibilidade em Portugal. Aprenda a adaptar a sua casa com sofisticação e a beneficiar do IVA a 6% (Verba 2.27).">
+    <meta name="keywords"
+        content="Design Inclusivo, Acessibilidade, Portugal, IVA 6%, DL 163/2006, Decoração, Arquitetura">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    },
+                    colors: {
+                        champagne: {
+                            50: '#f7f1e9',
+                            100: '#efdfce',
+                            200: '#e1c6a6',
+                            300: '#d1a77b',
+                            400: '#c18a51',
+                            500: '#a36d39',
+                        },
+                        blush: {
+                            50: '#f6ece9',
+                            100: '#ecd9d2',
+                            200: '#e1c0b5',
+                            300: '#d1a090',
+                            400: '#c1806b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+
+            to {
+                opacity: 0.8;
+                transform: translateY(0);
+            }
+        }
+
+        details[open]>div {
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+
+        .logo-img {
+            display: block;
+            width: auto;
+            max-height: 210px;
+            object-fit: contain;
+            /* Surgically hide the AI star artifact in the bottom right */
+            clip-path: inset(0 5% 8% 0);
+        }
+
+        .bg-mesh {
+            background-color: #f7f1e9;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(25, 100%, 94%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(23, 100%, 92%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(30, 100%, 94%, 1) 0, transparent 50%);
+        }
+    </style>
+</head>
+
+<body class="bg-champagne-50 text-stone-800 antialiased font-sans selection:bg-blush-100 scroll-smooth">
+
+    <header class="fixed top-0 w-full bg-white/98 backdrop-blur-xl z-50 border-b border-champagne-200/40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-0 flex justify-between items-center">
+            <!-- Original Image Logo -->
+            <a href="#" aria-label="Início — Cristiana Azevedo Atelier"
+                class="relative flex items-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-champagne-400 focus-visible:ring-offset-2 rounded-sm transform transition hover:scale-[1.01]">
+                <img src="assets/logo.png" alt="Cristiana Azevedo Atelier Logo" class="logo-img h-36 md:h-52">
+            </a>
+
+            <nav class="hidden lg:flex gap-10 items-center">
+                <a href="#ambientes"
+                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Ambientes</a>
+                <a href="#portfolio"
+                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Portfolio</a>
+                <a href="#materiais"
+                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Materiais</a>
+                <a href="#fiscalidade"
+                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Fiscalidade</a>
+                <a href="#faq"
+                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">FAQ</a>
+            </nav>
+            <button class="lg:hidden text-stone-900 pt-2"><iconify-icon icon="solar:hamburger-menu-linear" width="28"
+                    height="28"></iconify-icon></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="pt-52 pb-16 md:pt-64 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+            <div class="flex flex-col items-center text-center max-w-4xl mx-auto mb-16 md:mb-24">
+                <a href="index.html#fiscalidade"
+                    class="text-[10px] font-bold tracking-[0.4em] uppercase text-champagne-400 mb-6 hover:text-stone-900 transition-colors flex items-center gap-2"><iconify-icon
+                        icon="solar:arrow-left-linear" class="text-base"></iconify-icon> Voltar Voltar</a>
+                <h1
+                    class="text-4xl md:text-6xl font-medium tracking-tight text-stone-900 mb-10 leading-tight uppercase font-serif">
+                    Quadro Legal:<br>Regime de Acessibilidade</h1>
+                <p class="text-xl md:text-2xl text-stone-500 leading-relaxed max-w-2xl font-light italic">
+                    "A legislação portuguesa em matéria de acessibilidade evoluiu para exigências técnicas aplicáveis ao
+                    interior das habitações."
+                </p>
+                <div class="w-16 h-px bg-champagne-300 my-10"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-white p-10 md:p-16 rounded-[3rem] shadow-xl border border-champagne-100">
+
+                <div class="prose prose-stone prose-lg max-w-none text-stone-600 font-light leading-relaxed">
+                    <h3 class="text-2xl font-serif text-stone-900 mb-6 font-medium">1. Principal Legislação (Normas
+                        Técnicas)</h3>
+
+                    <div class="mb-8 p-6 bg-champagne-50/50 rounded-2xl border border-champagne-100">
+                        <h4 class="text-xl font-bold text-stone-900 mb-3">Decreto-Lei n.º 163/2006 (8 de agosto)</h4>
+                        <p class="mb-4 text-stone-500">O pilar da acessibilidade em Portugal. Estabelece as normas
+                            técnicas para eliminação de barreiras arquitetónicas, incluindo em edifícios habitacionais
+                            (design universal obrigatório em novas construções).</p>
+                        <ul class="list-disc list-inside space-y-2 text-stone-600 mb-6">
+                            <li><strong>Portas:</strong> Altura livre > 2m, largura útil permitindo a passagem de
+                                cadeira de rodas (mínimo de 0,80m).</li>
+                            <li><strong>Circulação:</strong> Corredores devem ter largura mínima (1,10m-1,20m) para
+                                mobilidade.</li>
+                            <li><strong>Áreas de Manobra:</strong> Zonas de manobra de 360º para cadeiras de rodas
+                                obrigatórias nos acessos principais.</li>
+                        </ul>
+                        <a href="https://diariodarepublica.pt/dr/detalhe/decreto-lei/163-2006-538624" target="_blank"
+                            class="text-[11px] font-bold uppercase tracking-[0.3em] text-stone-900 hover:text-champagne-500 transition-colors flex items-center gap-2 inline-flex">
+                            Ler na Íntegra (Diário da República)<iconify-icon icon="solar:arrow-right-linear"
+                                class="text-base"></iconify-icon>
+                        </a>
+                    </div>
+
+                    <div class="mb-12">
+                        <h4 class="text-xl font-bold text-stone-900 mb-3">Decreto-Lei n.º 123/97 (22 de maio)</h4>
+                        <p>Estabelece as normas gerais sobre a acessibilidade em edifícios e estabelecimentos que
+                            recebam público, também aplicável à envolvente de habitações.</p>
+                    </div>
+
+                    <h3
+                        class="text-2xl font-serif text-stone-900 mb-6 font-medium mt-16 border-t border-champagne-100 pt-16">
+                        2. Adaptação em Prédios (Propriedade Horizontal)</h3>
+                    <p class="mb-6">Se vive num prédio e precisa de adaptar as partes comuns (como rampas ou
+                        elevadores), o <strong>Artigo 1425.º do Código Civil</strong> prevê:</p>
+                    <ul class="list-disc list-inside space-y-3 mb-16">
+                        <li><strong>Sem autorização prévia:</strong> Pode instalar rampas ou elevadores de plataforma se
+                            o condómino tiver uma incapacidade superior a 60%, desde que não prejudique a utilização das
+                            partes comuns.</li>
+                        <li><strong>Comunicação:</strong> Deve informar o administrador do condomínio por carta
+                            registada com 15 dias de antecedência.</li>
+                    </ul>
+
+                    <h3
+                        class="text-2xl font-serif text-stone-900 mb-6 font-medium mt-16 border-t border-champagne-100 pt-16">
+                        3. Programas de Apoio Financeiro e Habitação Aflita</h3>
+                    <p class="mb-8">Adaptar uma casa pode ser dispendioso. O <strong>Regime de Crédito à Habitação
+                            (2015)</strong> fornece um enquadramento para apoiar a adaptação de habitações para pessoas
+                        com deficiência, com propostas de aumento de montantes para até 450.000€.</p>
+                    <p class="mb-6">Adicionalmente, existem programas públicos e apoios de estado em vigor:</p>
+
+                    <div class="overflow-x-auto mb-16">
+                        <table class="w-full text-left border-collapse rounded-2xl overflow-hidden shadow-sm">
+                            <thead>
+                                <tr class="bg-stone-900 text-white">
+                                    <th class="p-4 font-medium uppercase tracking-[0.2em] text-[10px]">Programa</th>
+                                    <th class="p-4 font-medium uppercase tracking-[0.2em] text-[10px]">Objetivo</th>
+                                    <th class="p-4 font-medium uppercase tracking-[0.2em] text-[10px]">Entidade
+                                        Responsável</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-champagne-100 bg-white">
+                                <tr class="hover:bg-champagne-50 transition-colors">
+                                    <td class="p-4 font-bold text-stone-900">PARES</td>
+                                    <td class="p-4">Reabilitação de habitações para pessoas com deficiência.</td>
+                                    <td class="p-4">INR / Segurança Social</td>
+                                </tr>
+                                <tr class="hover:bg-champagne-50 transition-colors">
+                                    <td class="p-4 font-bold text-stone-900">Porta 65</td>
+                                    <td class="p-4">Apoios específicos em situações de vulnerabilidade.</td>
+                                    <td class="p-4">IHRU</td>
+                                </tr>
+                                <tr class="hover:bg-champagne-50 transition-colors">
+                                    <td class="p-4 font-bold text-stone-900">Apoios Locais</td>
+                                    <td class="p-4">Programas próprios de "Habitação Aflita" ou de adaptação urgentes.
+                                    </td>
+                                    <td class="p-4">Câmaras Municipais</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white py-32 px-6 border-t border-champagne-100 relative">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-24">
+            <div class="max-w-md">
+                <!-- Original Image Logo in Footer -->
+                <div class="mb-12 block relative w-fit">
+                    <img src="assets/logo.png" alt="Cristiana Azevedo Atelier Logo"
+                        class="logo-img h-36 md:h-48 opacity-90">
+                </div>
+                <p class="text-base text-stone-400 font-light leading-loose italic pr-12">
+                    "Arquitetura sensível e técnica ao serviço da autonomia humana. A promover o design inclusivo em
+                    Portugal com rigor e sofisticação."
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-20 md:gap-40">
+                <div>
+                    <h4 class="text-stone-900 text-[11px] font-bold mb-12 uppercase tracking-[0.4em]">Atelier</h4>
+                    <ul class="space-y-8 text-xs text-stone-400 font-medium uppercase tracking-[0.3em]">
+                        <li><a href="#ambientes" class="hover:text-stone-900 transition-colors">Ambientes</a></li>
+                        <li><a href="#portfolio" class="hover:text-stone-900 transition-colors">Portfolio</a></li>
+                        <li><a href="#materiais" class="hover:text-stone-900 transition-colors">Materais</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-stone-900 text-[11px] font-bold mb-12 uppercase tracking-[0.4em]">Contacto</h4>
+                    <ul class="space-y-8 text-xs text-stone-400 font-medium">
+                        <li><a href="mailto:geral@cristianaazevedo.pt"
+                                class="hover:text-stone-900 transition-colors uppercase tracking-[0.3em]">geral@cristianaazevedo.pt</a>
+                        </li>
+                        <li class="flex gap-10 pt-6">
+                            <a href="#"
+                                class="text-stone-300 hover:text-stone-900 transition-colors transform hover:-translate-y-1 transition-all"><iconify-icon
+                                    icon="solar:camera-linear" class="text-3xl"></iconify-icon></a>
+                            <a href="#"
+                                class="text-stone-300 hover:text-stone-900 transition-colors transform hover:-translate-y-1 transition-all"><iconify-icon
+                                    icon="solar:letter-linear" class="text-3xl"></iconify-icon></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto mt-40 pt-16 border-t border-stone-100 flex flex-col sm:flex-row justify-between items-center gap-10 text-[10px] text-stone-300 uppercase tracking-[0.3em] font-bold">
+            <p>© 2026 Cristiana Azevedo Atelier. Todos os direitos reservados.</p>
+            <div class="flex gap-16">
+                <a href="#" class="hover:text-stone-900 transition-colors">Privacidade</a>
+                <a href="#" class="hover:text-stone-900 transition-colors">Termos</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
