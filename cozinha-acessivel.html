@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Universal em Cozinhas - Espaços sem Barreiras</title>
+
+    <meta name="description"
+        content="Descubra como aplicar o Design Universal na sua cozinha. Um guia prático para criar espaços acessíveis, funcionais e elegantes para cadeiras de rodas e pessoas com mobilidade reduzida.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    },
+                    colors: {
+                        champagne: {
+                            50: '#f7f1e9',
+                            100: '#efdfce',
+                            200: '#e1c6a6',
+                            300: '#d1a77b',
+                            400: '#c18a51',
+                            500: '#a36d39',
+                        },
+                        blush: {
+                            50: '#f6ece9',
+                            100: '#ecd9d2',
+                            200: '#e1c0b5',
+                            300: '#d1a090',
+                            400: '#c1806b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .logo-img {
+            display: block;
+            width: auto;
+            max-height: 210px;
+            object-fit: contain;
+            clip-path: inset(0 5% 8% 0);
+        }
+
+        .bg-mesh {
+            background-color: #f7f1e9;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(25, 100%, 94%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(23, 100%, 92%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(30, 100%, 94%, 1) 0, transparent 50%);
+        }
+    </style>
+</head>
+
+<body class="bg-champagne-50 text-stone-800 antialiased font-sans selection:bg-blush-100 scroll-smooth">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white/98 backdrop-blur-xl z-50 border-b border-champagne-200/40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-2 md:py-4 flex justify-between items-center">
+            <a href="index.html" aria-label="Início — Cristiana Azevedo Atelier"
+                class="relative flex items-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-champagne-400 focus-visible:ring-offset-2 rounded-sm transform transition hover:scale-[1.01]">
+                <img src="assets/logo.png" alt="Cristiana Azevedo Atelier Logo" class="logo-img h-16 md:h-24">
+            </a>
+
+            <nav class="hidden lg:flex gap-10 items-center">
+                <a href="index.html"
+                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors flex items-center gap-2">
+                    <iconify-icon icon="solar:arrow-left-linear"></iconify-icon> Voltar ao Início
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-24 md:pt-48 md:pb-32 px-6 md:px-12 max-w-4xl mx-auto">
+
+        <!-- Artigo Header -->
+        <header class="mb-16 md:mb-24 text-center">
+            <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-champagne-500 mb-6 block">Estudo de
+                Caso</span>
+            <h1 class="text-4xl md:text-6xl font-medium tracking-tight text-stone-900 font-serif leading-tight mb-8">
+                Design Universal<br>Aplicado à Cozinha
+            </h1>
+            <div class="w-16 h-px bg-champagne-300 mx-auto mb-8"></div>
+            <p class="text-lg md:text-xl text-stone-500 font-light leading-relaxed max-w-2xl mx-auto italic">
+                Como os espaços planeados para funcionalidade máxima resultam em divisões elegantes e modernas para
+                todos.
+            </p>
+        </header>
+
+        <!-- Parte 1: Introdução Design Universal -->
+        <!-- Parte 1: Introdução Design Universal -->
+        <article class="space-y-12 text-stone-600 font-light text-lg md:text-xl leading-relaxed">
+
+            <figure class="my-16 group">
+                <div
+                    class="aspect-[16/9] md:aspect-[21/9] rounded-[2rem] overflow-hidden shadow-2xl border border-white bg-white">
+                    <img src="assets/cozinha/img1.png" alt="Visão ampla de uma cozinha moderna acessível"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                </div>
+                <figcaption class="mt-4 text-sm text-center text-stone-400 italic">Visão geral da cozinha adaptada com
+                    design contemporâneo.</figcaption>
+            </figure>
+
+            <figure class="my-16 group">
+                <div
+                    class="aspect-[16/9] md:aspect-[21/9] rounded-[2rem] overflow-hidden shadow-xl border border-white bg-white">
+                    <img src="assets/cozinha/img2.png" alt="Detalhe do design da cozinha para mobilidade reduzida"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                </div>
+            </figure>
+
+            <div
+                class="mt-8 bg-white p-8 md:p-10 rounded-[2rem] shadow-sm border border-champagne-100 flex flex-col md:flex-row items-center md:items-start gap-8 my-16">
+                <div class="w-16 h-16 shrink-0 rounded-2xl bg-champagne-100 flex items-center justify-center mt-1">
+                    <iconify-icon icon="solar:star-circle-bold" class="text-champagne-500 text-3xl"></iconify-icon>
+                </div>
+                <p class="text-lg md:text-xl text-stone-600 m-0 leading-relaxed font-light">
+                    <strong class="font-serif text-stone-900 text-2xl block mb-2">Design Universal</strong>
+                    Estas imagens são excelentes exemplos de <strong>Design Universal</strong> aplicado a uma cozinha,
+                    onde os espaços são planeados para ser funcionais tanto para pessoas com mobilidade reduzida quanto
+                    para pessoas em pé.
+                </p>
+            </div>
+
+            <!-- Interação Cadeira de Rodas -->
+            <figure class="my-16 group">
+                <div
+                    class="aspect-[16/9] md:aspect-[21/9] rounded-[2rem] overflow-hidden shadow-2xl border border-white bg-white">
+                    <img src="assets/cozinha/img3.png"
+                        alt="Utilizador em cadeira de rodas integrado de forma natural no recorte da bancada sob o lava-loiça"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                </div>
+                <figcaption
+                    class="mt-8 bg-white p-8 md:p-10 rounded-[2rem] shadow-sm border border-champagne-100 flex flex-col md:flex-row items-center md:items-start gap-8">
+                    <div class="w-16 h-16 shrink-0 rounded-2xl bg-champagne-100 flex items-center justify-center mt-1">
+                        <iconify-icon icon="solar:info-circle-bold" class="text-champagne-500 text-3xl"></iconify-icon>
+                    </div>
+                    <p class="text-lg md:text-xl text-stone-600 m-0 leading-relaxed font-light">
+                        <strong class="font-serif text-stone-900 text-2xl block mb-2">Acessibilidade Integrada</strong>
+                        Aqui está a imagem da cozinha acessível com uma pessoa numa cadeira de rodas integrada de forma
+                        natural e funcional no recorte sob o lava-loiça. Todos os outros elementos da cozinha, incluindo
+                        o backsplash azul intermédio e os eletrodomésticos, foram mantidos.
+                    </p>
+                </figcaption>
+            </figure>
+
+            <!-- Lista de Elementos -->
+            <div class="mt-32">
+                <h2 class="text-3xl md:text-4xl font-serif text-stone-900 mb-10 leading-tight">Aqui estão os principais
+                    elementos de acessibilidade visíveis:</h2>
+
+                <div class="space-y-12">
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div
+                            class="w-16 h-16 shrink-0 rounded-[1.25rem] bg-champagne-100 flex items-center justify-center mt-1">
+                            <iconify-icon icon="solar:ruler-bold" class="text-champagne-500 text-3xl"></iconify-icon>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-medium text-stone-900 mb-4 font-serif">Bancada com Vão Livre</h3>
+                            <p class="mb-0 text-stone-500">A ilha central e o lava-loiça possuem um espaço aberto por
+                                baixo, permitindo que a pessoa em cadeira de rodas encaixe as pernas e se aproxime
+                                totalmente da superfície de trabalho.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div
+                            class="w-16 h-16 shrink-0 rounded-[1.25rem] bg-champagne-100 flex items-center justify-center mt-1">
+                            <iconify-icon icon="solar:washing-machine-bold"
+                                class="text-champagne-500 text-3xl"></iconify-icon>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-medium text-stone-900 mb-4 font-serif">Fornos em Altura Acessível
+                            </h3>
+                            <p class="mb-0 text-stone-500">Os fornos estão instalados numa torre a uma altura média,
+                                facilitando o alcance e a visualização, tanto para quem está sentado quanto para quem
+                                está de pé, sem a necessidade de se curvar excessivamente.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div
+                            class="w-16 h-16 shrink-0 rounded-[1.25rem] bg-champagne-100 flex items-center justify-center mt-1">
+                            <iconify-icon icon="solar:hamburger-menu-linear"
+                                class="text-champagne-500 text-3xl"></iconify-icon>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-medium text-stone-900 mb-4 font-serif">Gavetões e Armários
+                                Deslizantes</h3>
+                            <p class="mb-0 text-stone-500">O uso de sistemas de extração total facilita o acesso a itens
+                                guardados no fundo, eliminando a necessidade de "mergulhar" dentro de armários
+                                profundos.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div
+                            class="w-16 h-16 shrink-0 rounded-[1.25rem] bg-champagne-100 flex items-center justify-center mt-1">
+                            <iconify-icon icon="solar:eye-bold" class="text-champagne-500 text-3xl"></iconify-icon>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-medium text-stone-900 mb-4 font-serif">Contraste Cromático</h3>
+                            <p class="mb-0 text-stone-500">O uso de preto e branco (ou outras paletas contrastantes) não
+                                é apenas estético; o alto contraste ajuda pessoas com baixa visão a identificar limites
+                                de superfícies, bordas e puxadores.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div
+                            class="w-16 h-16 shrink-0 rounded-[1.25rem] bg-champagne-100 flex items-center justify-center mt-1">
+                            <iconify-icon icon="solar:lightbulb-bold"
+                                class="text-champagne-500 text-3xl"></iconify-icon>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-medium text-stone-900 mb-4 font-serif">Iluminação Direcionada</h3>
+                            <p class="mb-0 text-stone-500">Os pontos de luz no teto garantem que as áreas de trabalho
+                                (lava-loiça, fogão e bancada) estejam bem iluminadas, o que é crucial para a segurança.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center my-24">
+                <div class="w-16 h-px bg-champagne-300 mx-auto mb-10"></div>
+                <p class="text-2xl md:text-3xl font-serif text-stone-500 italic max-w-2xl mx-auto leading-relaxed">
+                    Projetos como este mostram que a acessibilidade pode ser integrada de forma moderna e elegante, sem
+                    parecer um ambiente hospitalar.
+                </p>
+            </div>
+
+            <figure class="my-16 group">
+                <div
+                    class="aspect-[16/9] md:aspect-[21/9] rounded-[2rem] overflow-hidden shadow-2xl border border-white bg-white">
+                    <img src="assets/cozinha/img4.png" alt="Exemplo adicional de cozinha acessível com ergonomia"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                </div>
+                <figcaption
+                    class="mt-8 text-lg text-center text-stone-500 p-8 md:p-10 bg-champagne-50/50 rounded-[2rem] border border-champagne-100/50">
+                    Aqui está uma imagem que exemplifica os conceitos de Desenho Universal e acessibilidade descritos,
+                    com foco na funcionalidade para utilizadores de cadeiras de rodas e na ergonomia do espaço.
+                </figcaption>
+            </figure>
+
+
+            <!-- Secção Backsplash -->
+            <div class="mt-40 pt-24 border-t border-champagne-200/40">
+                <h2 class="text-4xl md:text-5xl font-serif text-stone-900 mb-12">A Importância do Backsplash</h2>
+
+                <div class="bg-white p-8 md:p-12 rounded-[2rem] shadow-sm border border-champagne-100 mb-16">
+                    <p class="text-xl md:text-2xl m-0 font-light text-stone-600 leading-relaxed font-serif">
+                        O <strong>backsplash</strong> é um termo muito comum no design de interiores e arquitetura,
+                        referindo-se à <strong>faixa de revestimento instalada na parede atrás do lava-loiça ou do
+                            fogão</strong>.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mt-16">
+
+                    <div class="lg:col-span-7 space-y-16">
+                        <div>
+                            <h3 class="text-3xl font-medium text-stone-900 mb-6 font-serif">1. Função Prática (Proteção)
+                            </h3>
+                            <p class="mb-8 text-stone-500">A sua principal missão é proteger a parede contra:</p>
+                            <ul class="space-y-6">
+                                <li class="flex items-start gap-4">
+                                    <iconify-icon icon="solar:drop-bold"
+                                        class="text-champagne-400 text-2xl mt-1 shrink-0"></iconify-icon>
+                                    <span class="text-stone-600"><strong>Humidade:</strong> Evita que a água da pia
+                                        infiltre na alvenaria.</span>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <iconify-icon icon="solar:flame-bold"
+                                        class="text-champagne-400 text-2xl mt-1 shrink-0"></iconify-icon>
+                                    <span class="text-stone-600"><strong>Gordura:</strong> Facilita a limpeza de
+                                        resíduos que saltam das panelas durante a confecção.</span>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <iconify-icon icon="solar:shield-bold"
+                                        class="text-champagne-400 text-2xl mt-1 shrink-0"></iconify-icon>
+                                    <span class="text-stone-600"><strong>Manchas:</strong> Protege a pintura ou o papel
+                                        de parede de danos permanentes.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="w-16 h-px bg-champagne-200/50"></div>
+
+                        <div>
+                            <h3 class="text-3xl font-medium text-stone-900 mb-6 font-serif">2. Elemento Estético</h3>
+                            <p class="text-stone-500">Além da proteção, o backsplash é frequentemente o <strong>ponto
+                                    fulcral da cozinha</strong>. Como é uma área pequena, permite ousar mais nos
+                                materiais sem sobrecarregar o orçamento global do projeto.</p>
+                        </div>
+
+                        <div class="w-16 h-px bg-champagne-200/50"></div>
+
+                        <div>
+                            <h3 class="text-3xl font-medium text-stone-900 mb-6 font-serif">3. Materiais Comuns</h3>
+                            <ul class="space-y-6">
+                                <li class="flex items-start gap-4">
+                                    <iconify-icon icon="solar:buildings-bold"
+                                        class="text-champagne-400 text-2xl mt-1 shrink-0"></iconify-icon>
+                                    <span class="text-stone-600"><strong>Azulejos Submetro:</strong> Clássico, testado
+                                        pelo tempo e muito fácil de limpar.</span>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <iconify-icon icon="solar:square-bold"
+                                        class="text-champagne-400 text-2xl mt-1 shrink-0"></iconify-icon>
+                                    <span class="text-stone-600"><strong>Pedra ou Quartzo:</strong> Visual luxuoso e
+                                        contínuo da bancada até à base do móvel superior.</span>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <iconify-icon icon="solar:mirror-right-bold"
+                                        class="text-champagne-400 text-2xl mt-1 shrink-0"></iconify-icon>
+                                    <span class="text-stone-600"><strong>Vidro ou Inox:</strong> O ideal para um aspeto
+                                        mais moderno e industrial.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5 h-full">
+                        <div
+                            class="bg-champagne-50/80 backdrop-blur-sm border border-champagne-200/50 p-10 md:p-12 rounded-[3rem] h-fit md:sticky top-32 shadow-xl relative overflow-hidden group">
+
+                            <div class="relative z-10">
+                                <div class="flex items-center gap-6 mb-10">
+                                    <div
+                                        class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center shadow-sm">
+                                        <iconify-icon icon="solar:star-fall-bold"
+                                            class="text-3xl text-champagne-500"></iconify-icon>
+                                    </div>
+                                    <h3 class="text-3xl font-serif text-stone-900 m-0">Dica de<br>Acessibilidade</h3>
+                                </div>
+                                <div class="w-16 h-px bg-champagne-300/50 mb-10"></div>
+                                <p class="text-xl leading-relaxed text-stone-600">
+                                    Em cozinhas adaptadas, o backsplash deve ser de um material de <strong
+                                        class="text-stone-900">fácil limpeza</strong> (sem muitas texturas ou relevos
+                                    profundos).
+                                </p>
+                                <p class="text-xl leading-relaxed mt-6 text-stone-600">
+                                    Isto garante que o utilizador consiga mantê-lo impecável com o mínimo esforço
+                                    possível, especialmente a partir de uma posição sentada onde o raio de alcance é
+                                    reduzido.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Galeria Final -->
+            <div class="mt-40 pt-24 border-t border-champagne-200/40">
+                <div class="text-center mb-16">
+                    <span
+                        class="text-[10px] font-bold tracking-[0.4em] uppercase text-champagne-500 mb-6 block">Referências
+                        Visuais</span>
+                    <h3 class="text-4xl md:text-5xl font-serif text-stone-900 mb-8 tracking-tight">Galeria de Inspiração
+                    </h3>
+                    <div class="w-16 h-px bg-champagne-300 mx-auto"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+
+                    <figure class="group m-0 flex flex-col">
+                        <div
+                            class="aspect-[4/3] rounded-[2rem] md:rounded-[3rem] overflow-hidden bg-white shadow-xl group-hover:shadow-2xl border border-champagne-50 transition-all duration-500">
+                            <img src="assets/cozinha/img5.png" alt="Textura de backsplash"
+                                class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                        </div>
+                        <figcaption class="mt-8 px-4">
+                            <h4 class="text-2xl font-serif text-stone-900 mb-3 border-l-2 border-champagne-400 pl-4">
+                                Relevo Reduzido</h4>
+                            <p class="text-stone-500 font-light leading-relaxed pl-4">Manter o backsplash livre de
+                                texturas profundas não só limpa visualmente a cozinha como simplifica radicalmente a
+                                manutenção diária para todas as idades.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="group m-0 flex flex-col">
+                        <div
+                            class="aspect-[4/3] rounded-[2rem] md:rounded-[3rem] overflow-hidden bg-white shadow-xl group-hover:shadow-2xl border border-champagne-50 transition-all duration-500">
+                            <img src="assets/cozinha/img6.png" alt="Detalhe bancada acessível"
+                                class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                        </div>
+                        <figcaption class="mt-8 px-4">
+                            <h4 class="text-2xl font-serif text-stone-900 mb-3 border-l-2 border-champagne-400 pl-4">
+                                Superfície Contínua</h4>
+                            <p class="text-stone-500 font-light leading-relaxed pl-4">O material contínuo e nivelado da
+                                bancada permite arrastar tachos pesados em vez de os ter que levantar em peso,
+                                protegendo a articulação e poupando energia.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="group m-0 flex flex-col">
+                        <div
+                            class="aspect-[4/3] rounded-[2rem] md:rounded-[3rem] overflow-hidden bg-white shadow-xl group-hover:shadow-2xl border border-champagne-50 transition-all duration-500">
+                            <img src="assets/cozinha/img7.png" alt="Solução de armazenamento acessível"
+                                class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                        </div>
+                        <figcaption class="mt-8 px-4">
+                            <h4 class="text-2xl font-serif text-stone-900 mb-3 border-l-2 border-champagne-400 pl-4">
+                                Ferragens Ergonómicas</h4>
+                            <p class="text-stone-500 font-light leading-relaxed pl-4">A utilização de puxadores em
+                                formato de barra comprida requer significativamente menos destreza manual e força para
+                                abrir gavetões pesados do que puxadores de formato botão.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="group m-0 flex flex-col">
+                        <div
+                            class="aspect-[4/3] rounded-[2rem] md:rounded-[3rem] overflow-hidden bg-white shadow-xl group-hover:shadow-2xl border border-champagne-50 transition-all duration-500">
+                            <img src="assets/cozinha/img8.png" alt="Acesso desimpedido ao fogão"
+                                class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                        </div>
+                        <figcaption class="mt-8 px-4">
+                            <h4 class="text-2xl font-serif text-stone-900 mb-3 border-l-2 border-champagne-400 pl-4">
+                                Controlos Frontais</h4>
+                            <p class="text-stone-500 font-light leading-relaxed pl-4">Eletrodomésticos com painéis de
+                                comando embutidos na frente garantem que o utilizador não necessita de se esticar sobre
+                                as zonas quentes de confeção para os ajustar.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="group m-0 flex flex-col md:col-span-2">
+                        <div
+                            class="aspect-[4/3] md:aspect-[21/9] rounded-[2rem] md:rounded-[3rem] overflow-hidden bg-white shadow-xl group-hover:shadow-2xl border border-champagne-50 transition-all duration-500">
+                            <img src="assets/cozinha/img9.png" alt="Perspetiva ampla da cozinha"
+                                class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105">
+                        </div>
+                        <figcaption class="mt-8 px-4 max-w-3xl mx-auto text-center md:pb-8">
+                            <h4 class="text-2xl font-serif text-stone-900 mb-4 inline-block relative">Raio de Rotação
+                                Livre<span class="absolute -bottom-2 left-0 w-full h-[2px] bg-champagne-300"></span>
+                            </h4>
+                            <p class="text-stone-500 font-light leading-relaxed text-lg mt-4">Uma verdadeira arquitetura
+                                sem barreiras planifica as distâncias entre ilhas e armários para garantir um diâmetro
+                                de viragem totalmente desimpedido (mínimo de 1,5m em todos os pontos rotacionais
+                                importantes).</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="group m-0 flex flex-col md:col-span-2">
+                        <div
+                            class="aspect-[4/3] md:aspect-[21/9] rounded-[2rem] md:rounded-[3rem] overflow-hidden bg-white shadow-xl group-hover:shadow-2xl border border-champagne-50 transition-all duration-500">
+                            <img src="assets/cozinha/img10.png" alt="Outra perspetiva ampla"
+                                class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105">
+                        </div>
+                        <figcaption class="mt-8 px-4 max-w-3xl mx-auto text-center md:pb-8">
+                            <h4 class="text-2xl font-serif text-stone-900 mb-4 inline-block relative">Iluminação
+                                Abundante<span class="absolute -bottom-2 left-0 w-full h-[2px] bg-champagne-300"></span>
+                            </h4>
+                            <p class="text-stone-500 font-light leading-relaxed text-lg mt-4">Maximizar a entrada de luz
+                                natural e conjugá-la com focos zenitais claros é primordial para reduzir a fadiga
+                                ocular, garantindo máxima segurança no manuseio de facas e alimentos.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="group m-0 flex flex-col">
+                        <div
+                            class="aspect-[4/3] rounded-[2rem] md:rounded-[3rem] overflow-hidden bg-white shadow-xl group-hover:shadow-2xl border border-champagne-50 transition-all duration-500">
+                            <img src="assets/cozinha/img11.png" alt="Detalhe forno altura média"
+                                class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                        </div>
+                        <figcaption class="mt-8 px-4">
+                            <h4 class="text-2xl font-serif text-stone-900 mb-3 border-l-2 border-champagne-400 pl-4">
+                                Fornos a Meia Altura</h4>
+                            <p class="text-stone-500 font-light leading-relaxed pl-4">Colocar os fornos alinhados com a
+                                altura da bancada predispõe uma transição fácil dos tabuleiros pesados e escaldantes sem
+                                obrigar o corpo a fletir as costas, sendo uma das maiores inovações de conforto.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="group m-0 flex flex-col">
+                        <div
+                            class="aspect-[4/3] rounded-[2rem] md:rounded-[3rem] overflow-hidden bg-white shadow-xl group-hover:shadow-2xl border border-champagne-50 transition-all duration-500">
+                            <img src="assets/cozinha/img12.png" alt="Zona lava loiça adaptada"
+                                class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                        </div>
+                        <figcaption class="mt-8 px-4">
+                            <h4 class="text-2xl font-serif text-stone-900 mb-3 border-l-2 border-champagne-400 pl-4">
+                                Torneiras Extensíveis</h4>
+                            <p class="text-stone-500 font-light leading-relaxed pl-4">Misturadoras tipo "chuveiro
+                                extraível" com manípulo único ampliam dramaticamente o alcance de lavagem, evitando que
+                                pequenos esforços repetitivos prejudiquem a ergonomia do lava-loiça.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </article>
+
+        <div class="mt-32 text-center">
+            <a href="index.html"
+                class="inline-flex items-center gap-3 bg-stone-900 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-stone-800 transition-colors shadow-xl">
+                <iconify-icon icon="solar:home-2-linear" class="text-xl"></iconify-icon> Voltar à Página Inicial
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-20 px-6 border-t border-champagne-100 relative mt-24">
+        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center gap-10">
+            <div class="block relative w-fit">
+                <img src="assets/logo.png" alt="Cristiana Azevedo Atelier Logo"
+                    class="logo-img h-24 opacity-80 mix-blend-multiply">
+            </div>
+            <p class="text-[10px] text-stone-300 uppercase tracking-[0.3em] font-bold text-center">© 2026 Cristiana
+                Azevedo Atelier. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
