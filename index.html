@@ -88,28 +88,24 @@
 
     <header class="fixed top-0 w-full bg-white/98 backdrop-blur-xl z-50 border-b border-champagne-200/40 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 md:px-12 py-2 md:py-4 flex justify-between items-center">
-            <!-- Original Image Logo -->
             <a href="#" aria-label="Início — Cristiana Azevedo Atelier"
                 class="relative flex items-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-champagne-400 focus-visible:ring-offset-2 rounded-sm transform transition hover:scale-[1.01]">
                 <img src="assets/logo.png" alt="Cristiana Azevedo Atelier Logo" class="logo-img h-16 md:h-24">
             </a>
 
             <nav class="hidden lg:flex gap-10 items-center">
-                <a href="#sobre"
-                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Sobre</a>
-                <a href="#ambientes"
-                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Ambientes</a>
-                <a href="#portfolio"
-                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Portfolio</a>
-                <a href="cozinha-acessivel.html"
-                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Casos
-                    Práticos</a>
+                <a href="#manifesto"
+                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Manifesto</a>
+                <a href="#ambiencia"
+                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Ambiência</a>
                 <a href="#materiais"
                     class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Materiais</a>
-                <a href="#fiscalidade"
-                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Fiscalidade</a>
-                <a href="#faq"
-                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">FAQ</a>
+                <a href="#casos"
+                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Casos Reais</a>
+                <a href="#valor"
+                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Valor</a>
+                <a href="#apoio"
+                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Apoio</a>
             </nav>
             <button class="lg:hidden text-stone-900 pt-2"><iconify-icon icon="solar:hamburger-menu-linear" width="28"
                     height="28"></iconify-icon></button>
@@ -117,333 +113,172 @@
     </header>
 
     <main>
-        <section class="pt-32 pb-16 md:pt-40 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto bg-mesh">
-            <div class="flex flex-col items-center text-center max-w-4xl mx-auto mb-16 md:mb-24">
-                <h1
-                    class="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter text-stone-900 mb-10 leading-none uppercase font-serif">
-                    Espaços sem<br>Barreiras</h1>
-                <p class="text-xl md:text-2xl text-stone-500 leading-relaxed max-w-2xl font-light italic">
-                    "Transformar o lugar para libertar a vida."
-                </p>
-                <div class="w-16 h-px bg-champagne-300 my-10"></div>
-                <p class="text-base md:text-lg text-stone-400 max-w-2xl font-light leading-loose">
-                    Neste espaço, traduzimos a legislação para o mundo do design, mostrando que a acessibilidade é,
-                    acima de
-                    tudo, uma forma superior de conforto para todos.
-                </p>
-            </div>
-            <div
-                class="w-full aspect-[4/3] md:aspect-[21/9] bg-white rounded-[3rem] overflow-hidden relative group shadow-2xl shadow-champagne-300/20 border border-white">
-                <img src="assets/quarto_inclusivo_v2.jpg"
-                    alt="Quarto amplo em tons suaves de verde com acesso contínuo a uma casa de banho adaptada e moderna."
-                    class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105"
-                    loading="lazy">
-                <div class="absolute inset-0 bg-gradient-to-tr from-champagne-100/10 to-transparent"></div>
-            </div>
+        <!-- Section: Manifesto & Visão -->
+        <section id="manifesto" class="pt-32 pb-16 md:pt-48 md:pb-32 px-6 md:px-12 max-w-7xl mx-auto bg-mesh">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
+                <div class="lg:col-span-12 text-center mb-16">
+                    <h1 class="text-5xl md:text-8xl font-medium tracking-tighter text-stone-900 mb-8 leading-none uppercase font-serif">
+                        Espaços sem<br>Barreiras</h1>
+                    <p class="text-xl md:text-3xl text-stone-500 italic font-light max-w-3xl mx-auto">
+                        "Transformar o lugar para libertar a vida."
+                    </p>
+                </div>
+                
+                <div class="lg:col-span-5">
+                    <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-champagne-500 mb-6 block">O Manifesto</span>
+                    <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-stone-900 font-serif leading-tight mb-8">
+                        Design Inclusivo como Padrão de Luxo.</h2>
+                    <p class="text-lg text-stone-500 font-light leading-relaxed mb-6">
+                        Olá, sou a <strong>Cristiana Azevedo</strong>. Acredito que o design de uma casa só é verdadeiramente bom quando não deixa ninguém de fora.
+                    </p>
+                    <p class="text-lg text-stone-500 font-light leading-relaxed">
+                        No projeto Espaços sem Barreiras, traduzimos a legislação para o mundo do design, mostrando que a acessibilidade é, acima de tudo, a forma mais elevada de conforto. Uma casa adaptada deve ser uma casa de revista: sofisticada, luminosa e profundamente acolhedora.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="w-full aspect-[4/3] bg-white rounded-[3rem] overflow-hidden relative group shadow-2xl border border-white">
+                        <img src="assets/quarto_inclusivo_v2.jpg"
+                            alt="Visualização de um quarto inclusivo e sofisticado assinado por Cristiana Azevedo."
+                            class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105"
+                            loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-champagne-100/10 to-transparent"></div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="sobre" class="py-32 px-6 md:px-12 max-w-7xl mx-auto border-t border-champagne-200/60">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
-                <div class="lg:col-span-4">
-                    <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-champagne-500 mb-6 block">Sobre a
-                        Autora</span>
-                    <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-stone-900 font-serif leading-tight">
-                        Olá, sou a<br>Cristiana Azevedo.</h2>
-                    <div class="w-16 h-px bg-champagne-300 mt-10 mb-10"></div>
-                </div>
-                <div class="lg:col-span-8 space-y-8 text-lg md:text-xl text-stone-500 font-light leading-relaxed">
-                    <p>
-                        Acredito que o design de uma casa só é verdadeiramente bom quando não deixa ninguém de fora. No
-                        projeto <strong>Espaços sem Barreiras</strong>, o meu trabalho é mostrar que uma casa adaptada
-                        pode — e deve — ser uma casa de revista: sofisticada, luminosa e profundamente acolhedora.
-                    </p>
-                    <p>
-                        Especializei-me em transformar "obstáculos" em soluções de design. Para mim, a acessibilidade
-                        não tem de ter um aspeto clínico ou frio; pelo contrário, vejo-a como a forma mais elevada de
-                        conforto. É a liberdade de circular sem pensar no caminho, é a autonomia de usar uma cozinha de
-                        sonho e a segurança de um banho que relaxa, sem preocupações.
-                    </p>
-
-                    <div class="bg-champagne-50/50 p-8 md:p-10 rounded-[2rem] border border-champagne-100 my-10">
-                        <h3 class="text-2xl font-serif text-stone-900 mb-6 font-medium">O meu foco é descomplicar:</h3>
-                        <ul class="space-y-6 text-base md:text-lg">
-                            <li class="flex items-start gap-4">
-                                <iconify-icon icon="solar:check-circle-linear"
-                                    class="text-champagne-500 text-2xl shrink-0 mt-1"></iconify-icon>
-                                <p><strong>Descomplico o espaço</strong>, aplicando as normas técnicas de forma
-                                    invisível e elegante.</p>
-                            </li>
-                            <li class="flex items-start gap-4">
-                                <iconify-icon icon="solar:check-circle-linear"
-                                    class="text-champagne-500 text-2xl shrink-0 mt-1"></iconify-icon>
-                                <p><strong>Descomplico a burocracia</strong>, ajudando-te a aproveitar os benefícios
-                                    fiscais (como o IVA a 6%) para que possas investir no que realmente importa: a tua
-                                    qualidade de vida.</p>
-                            </li>
-                        </ul>
+        <!-- Pillar I: Ambiência & Luz -->
+        <section id="ambiencia" class="py-32 px-6 md:px-12 max-w-7xl mx-auto border-t border-champagne-200/40">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start mb-32">
+                <div>
+                    <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-champagne-500 mb-6 block">Pilar I</span>
+                    <h2 class="text-5xl md:text-6xl font-medium mb-12 leading-[1.1] font-serif text-stone-900">Fluidez que<br>Acompanha.</h2>
+                    <div class="space-y-8 text-stone-500 text-lg font-light leading-relaxed">
+                        <p>A arquitetura inclusiva não é sobre normas, é sobre liberdade. Criamos espaços onde a tecnologia e o design se fundem para garantir autonomia total.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6">
+                            <div class="p-6 bg-white rounded-3xl shadow-sm border border-champagne-50">
+                                <h4 class="text-stone-900 font-bold mb-3 flex items-center gap-2">
+                                    <iconify-icon icon="solar:lightbulb-linear" class="text-champagne-500"></iconify-icon>
+                                    Luz Inteligente
+                                </h4>
+                                <p class="text-sm">A iluminação LED com controlo de temperatura (Quente/Frio) adapta-se ao seu ritmo circadiano e aumenta a precisão visual.</p>
+                            </div>
+                            <div class="p-6 bg-white rounded-3xl shadow-sm border border-champagne-50">
+                                <h4 class="text-stone-900 font-bold mb-3 flex items-center gap-2">
+                                    <iconify-icon icon="solar:smart-home-linear" class="text-champagne-500"></iconify-icon>
+                                    Smart Home
+                                </h4>
+                                <p class="text-sm">Domótica integrada para controlo de vãos, temperatura e segurança por voz ou movimento, eliminando barreiras físicas.</p>
+                            </div>
+                        </div>
                     </div>
-
-                    <p>
-                        O meu nome assina projetos onde a estética e a inclusão andam de mãos dadas. Porque, no final do
-                        dia, uma casa sem barreiras é, simplesmente, uma casa pronta para ser vivida com todo o prazer.
-                    </p>
+                </div>
+                <div class="relative">
+                    <div class="aspect-[4/5] rounded-[3rem] overflow-hidden bg-white shadow-2xl border border-white">
+                        <img src="assets/new_images/led_espelho.png" alt="Ambiente com luz LED sofisticada" class="w-full h-full object-cover">
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <section id="ambientes" class="py-32 px-6 md:px-12 max-w-7xl mx-auto border-t border-champagne-200/60">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
-                <div class="max-w-2xl">
-                    <span
-                        class="text-[10px] font-bold tracking-[0.3em] uppercase text-champagne-500 mb-6 block">Directrizes
-                        Espaciais</span>
-                    <h2 class="text-5xl md:text-6xl font-medium tracking-tight text-stone-900 font-serif">Ambientes</h2>
+            <!-- Universal Design Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 rounded-[2rem] bg-stone-900 text-white">
+                    <div class="mb-6 text-champagne-300"><iconify-icon icon="solar:users-group-two-rounded-linear" width="32"></iconify-icon></div>
+                    <h4 class="text-lg font-serif mb-4">Uso Equitativo</h4>
+                    <p class="text-stone-400 text-xs font-light">Espaços idênticos para todos. Onde o design luxuoso é, por definição, acessível.</p>
                 </div>
-                <p class="text-base text-stone-400 max-w-xs md:text-right leading-relaxed italic font-light">A ergonomia
-                    invisível que
-                    garante autonomia e beleza em cada divisão.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-24">
-                <article class="group relative">
-                    <div
-                        class="aspect-[4/5] overflow-hidden rounded-[2.5rem] bg-white mb-10 shadow-xl group-hover:shadow-2xl transition-all duration-700 border border-champagne-100">
-                        <img src="assets/kitchen_fluida.png"
-                            alt="Cozinha moderna acessível com bancadas suspensas e raio de manobra amplo."
-                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
-                    </div>
-                    <h3 class="text-3xl font-medium mb-6 text-stone-900 font-serif">A Cozinha Fluida</h3>
-                    <p class="text-base text-stone-500 font-light leading-relaxed mb-4">Foco no raio de rotação livre de
-                        1,50m.
-                        Bancadas suspensas (0,70m-0,80m) que aliam funcionalidade extrema a uma estética depurada.
-                    </p>
-                    <ul class="text-sm text-stone-600 font-light space-y-2 list-disc list-inside mb-6">
-                        <li>Sem armários inferiores na zona de lavagem para acesso em cadeira de rodas.</li>
-                        <li>Eletrodomésticos à altura dos olhos para evitar curvar.</li>
-                        <li>Sistemas de gavetas deslizantes para alcance fácil.</li>
-                    </ul>
-                    <a href="cozinha-acessivel.html"
-                        class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-champagne-500 hover:text-stone-900 transition-colors group/link mt-2">
-                        Ler Artigo Completo <iconify-icon icon="solar:arrow-right-linear"
-                            class="text-sm transform group-hover/link:translate-x-1 transition-transform"></iconify-icon>
-                    </a>
-                </article>
-
-                <article class="group mt-0 md:mt-24">
-                    <div
-                        class="aspect-[4/5] overflow-hidden rounded-[2.5rem] bg-white mb-10 shadow-xl group-hover:shadow-2xl transition-all duration-700 border border-champagne-100">
-                        <img src="assets/bathroom_walkin.png"
-                            alt="Casa de banho de luxo nivelada, walk-in puro com barras de apoio em preto mate sobre mármore."
-                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
-                    </div>
-                    <h3 class="text-3xl font-medium mb-6 text-stone-900 font-serif">O Refúgio: WC Walk-in</h3>
-                    <p class="text-base text-stone-500 font-light leading-relaxed mb-4">Bases niveladas, vãos de 0,80m e
-                        acessórios
-                        premium que eliminam o aspeto clínico, focando na segurança e no luxo.
-                    </p>
-                    <ul class="text-sm text-stone-600 font-light space-y-2 list-disc list-inside">
-                        <li>Sem desníveis ou degraus entre quarto e casa de banho ("Level Zero").</li>
-                        <li>Sanitas e lavatórios suspensos para garantir plano de chão livre.</li>
-                        <li>Barras de apoio pretas mate em contraste com mármore branco.</li>
-                    </ul>
-                </article>
-
-                <article class="group mt-0 md:mt-48">
-                    <div
-                        class="aspect-[4/5] overflow-hidden rounded-[2.5rem] bg-white mb-10 shadow-xl group-hover:shadow-2xl transition-all duration-700 border border-champagne-100">
-                        <img src="assets/bedroom_smart.png"
-                            alt="Quarto projetado de forma universal com amplo espaço, roupeiros abertos, luz inteligente e cama suspensa."
-                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
-                    </div>
-                    <h3 class="text-3xl font-medium mb-6 text-stone-900 font-serif">Quarto & Domótica</h3>
-                    <p class="text-base text-stone-500 font-light leading-relaxed mb-4">Circulação desimpedida e
-                        integração
-                        de
-                        tecnologia inteligente (Smart Home) para controlo de luz e temperatura sem esforço.
-                    </p>
-                    <ul class="text-sm text-stone-600 font-light space-y-2 list-disc list-inside">
-                        <li>Mobiliário evolutivo: roupeiros abertos para raio de 1,50m orgânico.</li>
-                        <li>Contraste cromático entre hardware escuro e paredes claras para visão subnormal.</li>
-                        <li>Camas articuladas e mesas de cabeceira suspensas.</li>
-                    </ul>
-                </article>
-            </div>
-
-            <!-- Pilares -->
-            <div class="mt-32 border-t border-champagne-100 pt-24">
-                <div class="text-center mb-16">
-                    <span
-                        class="text-[10px] font-bold tracking-[0.3em] uppercase text-champagne-500 mb-4 block">Princípios</span>
-                    <h3
-                        class="text-3xl md:text-4xl font-medium font-serif text-stone-900 border-b border-champagne-200 inline-block pb-6">
-                        Os 4 Pilares do Design Universal</h3>
+                <div class="p-8 rounded-[2rem] bg-white border border-champagne-100">
+                    <div class="mb-6 text-champagne-500"><iconify-icon icon="solar:slider-vertical-linear" width="32"></iconify-icon></div>
+                    <h4 class="text-lg font-serif mb-4 text-stone-900">Flexibilidade</h4>
+                    <p class="text-stone-500 text-xs font-light">Estruturas que se adaptam ao uso de pé ou sentado, sem compromisso estético.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-                    <div
-                        class="bg-white p-8 rounded-3xl shadow-sm border border-champagne-50 hover:shadow-xl transition-shadow">
-                        <div class="w-12 h-12 rounded-2xl bg-champagne-100 flex items-center justify-center mb-6">
-                            <iconify-icon icon="solar:users-group-two-rounded-bold"
-                                class="text-champagne-500 text-xl"></iconify-icon>
-                        </div>
-                        <h4 class="text-lg font-bold text-stone-900 mb-3">Uso Equitativo</h4>
-                        <p class="text-sm text-stone-500">O espaço deve ser idêntico para todos. Um duche walk-in é uma
-                            escolha estética luxuosa que, por acaso, é o mais acessível.</p>
-                    </div>
-                    <div
-                        class="bg-white p-8 rounded-3xl shadow-sm border border-champagne-50 hover:shadow-xl transition-shadow">
-                        <div class="w-12 h-12 rounded-2xl bg-champagne-100 flex items-center justify-center mb-6">
-                            <iconify-icon icon="solar:slider-vertical-bold"
-                                class="text-champagne-500 text-xl"></iconify-icon>
-                        </div>
-                        <h4 class="text-lg font-bold text-stone-900 mb-3">Flexibilidade</h4>
-                        <p class="text-sm text-stone-500">Elementos como lavatórios suspensos permitem o uso
-                            confortável, quer se esteja de pé ou sentado.</p>
-                    </div>
-                    <div
-                        class="bg-white p-8 rounded-3xl shadow-sm border border-champagne-50 hover:shadow-xl transition-shadow">
-                        <div class="w-12 h-12 rounded-2xl bg-champagne-100 flex items-center justify-center mb-6">
-                            <iconify-icon icon="solar:hand-stars-bold"
-                                class="text-champagne-500 text-xl"></iconify-icon>
-                        </div>
-                        <h4 class="text-lg font-bold text-stone-900 mb-3">Simplicidade</h4>
-                        <p class="text-sm text-stone-500">O uso de misturadoras monocomando e iluminação com sensor
-                            elimina a necessidade de força física ou destreza manual complexa.</p>
-                    </div>
-                    <div
-                        class="bg-white p-8 rounded-3xl shadow-sm border border-champagne-50 hover:shadow-xl transition-shadow">
-                        <div class="w-12 h-12 rounded-2xl bg-champagne-100 flex items-center justify-center mb-6">
-                            <iconify-icon icon="solar:leaf-bold" class="text-champagne-500 text-xl"></iconify-icon>
-                        </div>
-                        <h4 class="text-lg font-bold text-stone-900 mb-3">Baixo Esforço Físico</h4>
-                        <p class="text-sm text-stone-500">A utilização de portas de correr facilita muito a manobra para
-                            quem tem limitações de força ou mobilidade.</p>
-                    </div>
+                <div class="p-8 rounded-[2rem] bg-white border border-champagne-100">
+                    <div class="mb-6 text-champagne-500"><iconify-icon icon="solar:hand-stars-linear" width="32"></iconify-icon></div>
+                    <h4 class="text-lg font-serif mb-4 text-stone-900">Simplicidade</h4>
+                    <p class="text-stone-500 text-xs font-light">Interação intuitiva e baixo esforço físico. O design que não exige explicação.</p>
+                </div>
+                <div class="p-8 rounded-[2rem] bg-white border border-champagne-100">
+                    <div class="mb-6 text-champagne-500"><iconify-icon icon="solar:leaf-linear" width="32"></iconify-icon></div>
+                    <h4 class="text-lg font-serif mb-4 text-stone-900">Baixo Esforço</h4>
+                    <p class="text-stone-500 text-xs font-light">Portas de correr e vãos amplos que facilitam a manobra e o fluxo orgânico.</p>
                 </div>
             </div>
         </section>
 
-        <section id="portfolio" class="py-32 px-6 md:px-12 bg-blush-50 relative overflow-hidden">
-            <div class="max-w-7xl mx-auto relative z-10">
-                <div class="mb-24 text-center">
-                    <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-blush-400 mb-6 block">Estudos de
-                        Caso</span>
-                    <h2 class="text-5xl md:text-6xl font-medium tracking-tight text-stone-900 font-serif">Antes e
-                        Depois:<br>Transformações
-                        Reais</h2>
-                    <div class="w-16 h-px bg-blush-200 mx-auto my-10"></div>
-                </div>
-
-                <div class="space-y-32">
-                    <!-- Transformation 1: Kitchen -->
-                    <article class="group relative">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 mb-12">
-                            <div
-                                class="aspect-[4/3] rounded-[2rem] overflow-hidden bg-white relative shadow-2xl border border-white">
-                                <span
-                                    class="absolute top-6 left-6 bg-stone-900 text-white text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest z-10 font-bold">Antes</span>
-                                <img src="assets/kitchen_before.png"
-                                    alt="Cozinha antiga e genérica com barreira arquitetónicas como móveis e eletrodomésticos de difícil alcance."
-                                    class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-[1s]">
-                            </div>
-                            <div
-                                class="aspect-[4/3] rounded-[2rem] overflow-hidden bg-white relative shadow-2xl border border-white group-hover:shadow-[0_20px_50px_rgba(209,160,144,0.3)] transition-all duration-700">
-                                <span
-                                    class="absolute top-6 left-6 bg-blush-50 text-stone-900 text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest font-bold z-10 border border-blush-100 shadow-sm">Depois</span>
-                                <img src="assets/kitchen_fluida.png"
-                                    alt="Mesma cozinha transformada num espaço adaptado com design moderno e desimpedido."
-                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-                            <div class="md:col-span-8">
-                                <h3 class="text-3xl font-medium text-stone-900 mb-4 font-serif">A Cozinha Inclusiva
-                                    (Residência Sintra)</h3>
-                                <p class="text-lg text-stone-500 font-light leading-relaxed">A eliminação de armários
-                                    inferiores em zonas chave permitiu o uso total em cadeira de rodas. Uma península
-                                    estruturada com eletrodomésticos à altura dos olhos e sistemas removíveis sob a
-                                    bancada trouxeram autonomia sem comprometer a estética luxuosa.</p>
-                            </div>
-                            <div class="md:col-span-4 flex items-center h-full md:justify-end">
-                                <span
-                                    class="text-[10px] font-bold uppercase tracking-[0.3em] text-blush-500 border border-blush-200 px-4 py-2 rounded-full">Projecto
-                                    Concluído</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Transformation 2: Bathroom -->
-                    <article class="group relative">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 mb-12">
-                            <div
-                                class="aspect-[4/3] rounded-[2rem] overflow-hidden bg-white relative shadow-2xl border border-white">
-                                <span
-                                    class="absolute top-6 left-6 bg-stone-900 text-white text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest z-10 font-bold">Antes</span>
-                                <img src="assets/bathroom_before.png"
-                                    alt="Casa de banho padrão inacessível, com banheira de borda alta."
-                                    class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-[1s]">
-                            </div>
-                            <div
-                                class="aspect-[4/3] rounded-[2rem] overflow-hidden bg-white relative shadow-2xl border border-white group-hover:shadow-[0_20px_50px_rgba(209,160,144,0.3)] transition-all duration-700">
-                                <span
-                                    class="absolute top-6 left-6 bg-blush-50 text-stone-900 text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest font-bold z-10 border border-blush-100 shadow-sm">Depois</span>
-                                <img src="assets/bathroom_walkin.png"
-                                    alt="Casa de banho luxuosa inteiramente convertida num espaço Level Zero com base walk-in invisível."
-                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-                            <div class="md:col-span-8">
-                                <h3 class="text-3xl font-medium text-stone-900 mb-4 font-serif">O Refúgio Nível Zero
-                                    (Apartamento Lisboa)</h3>
-                                <p class="text-lg text-stone-500 font-light leading-relaxed">Substituição da antiga
-                                    banheira restritiva por um duche walk-in ao nível do chão (Barrier-Free). A
-                                    aplicação de ferragens e barras de apoio em preto mate sobre um fundo contínuo claro
-                                    oferece orientação visual forte e um visual de hotel boutique.</p>
-                            </div>
-                            <div class="md:col-span-4 flex items-center h-full md:justify-end">
-                                <span
-                                    class="text-[10px] font-bold uppercase tracking-[0.3em] text-blush-500 border border-blush-200 px-4 py-2 rounded-full">Projecto
-                                    Concluído</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-white/20 rounded-full blur-3xl"></div>
-        </section>
-
-
+        <!-- Pilar II: Materialidade & Detalhe -->
 
         <section id="materiais" class="py-32 px-6 md:px-12 max-w-7xl mx-auto border-t border-champagne-200/40">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-                <div
-                    class="aspect-[4/5] rounded-[3rem] overflow-hidden bg-white shadow-2xl shadow-champagne-100/50 border border-white">
-                    <img src="assets/materials.png"
-                        alt="Texturas ricas com forte contraste - vinil continuo de aspeto madeira contíguo a rodapés demarcados."
-                        class="w-full h-full object-cover">
-                </div>
-                <div class="max-w-xl">
-                    <span
-                        class="text-[10px] font-bold tracking-[0.4em] uppercase text-champagne-500 mb-10 block font-bold">Materialidade
-                        & Sensação</span>
-                    <h2 class="text-5xl md:text-6xl font-medium mb-12 leading-[1.1] font-serif text-stone-900">A
-                        Essência do Conforto Invisível.</h2>
-                    <div class="space-y-10 text-stone-500 text-lg md:text-xl leading-relaxed font-light mb-12">
-                        <p>Optar por <strong>pavimentos contínuos</strong> (ex: Vinil R10 Antiderrapante Natural Oak)
-                            remove obstáculos visuais e físicos, criando
-                            uma percepção de amplitude infinita.</p>
-                        <p>O uso inteligente de <strong>contrastes cromáticos</strong>, como a "Elegância Industrial"
-                            misturando Mármore Carrara e Ardósia Preta, orienta
-                            naturalmente a circulação, garantindo segurança para todos sem sacrificar a beleza.</p>
-                        <p>Na interação com os elementos, o <strong>toque e a aderência</strong> são fundamentais:
-                            substituímos maçanetas redondas e perigosas por puxadores em 'C', criando uma estética
-                            elegante e funcional.</p>
+                <div class="relative group">
+                    <div class="aspect-[4/5] rounded-[3rem] overflow-hidden bg-white shadow-2xl border border-white">
+                        <img src="assets/new_images/image_e9007535-bffa-4457-967e-38406e777f37.png" 
+                             alt="Interior sofisticado com contrastes cromáticos fortes (vermelho e preto) para orientação visual." 
+                             class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
                     </div>
-                    <div class="w-16 h-px bg-champagne-300"></div>
+                    <div class="absolute -top-6 -right-6 bg-stone-900 text-white p-6 rounded-2xl shadow-xl max-w-[200px]">
+                        <p class="text-[10px] font-bold uppercase tracking-widest mb-2 text-champagne-300">Materialidade</p>
+                        <p class="text-xs font-light italic">"O uso de contrastes fortes (Preto/Branco) com apontamentos de cor orienta a circulação com elegância."</p>
+                    </div>
+                </div>
+
+                <div class="max-w-xl">
+                    <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-champagne-500 mb-10 block">Pilar II</span>
+                    <h2 class="text-5xl md:text-6xl font-medium mb-12 leading-[1.1] font-serif text-stone-900">O Detalhe que<br>Liberta.</h2>
+                    
+                    <div class="space-y-12 text-stone-500 text-lg font-light leading-relaxed">
+                        <div>
+                            <h4 class="text-stone-900 font-bold mb-4 flex items-center gap-3">
+                                <iconify-icon icon="solar:chefs-hat-linear" class="text-champagne-500 text-2xl"></iconify-icon>
+                                Cozinha: A Função do Backsplash
+                            </h4>
+                            <p class="text-base mb-4">A faixa de revestimento instalada na parede atrás da banca ou do fogão não é apenas estética. É proteção e facilidade.</p>
+                            <ul class="text-sm space-y-2 list-disc list-inside">
+                                <li><strong>Higienização:</strong> Materiais de fácil limpeza permitem a manutenção sem esforço, essencial para utilizadores sentados.</li>
+                                <li><strong>Estética Ativa:</strong> O backsplash define o caráter visual da cozinha enquanto cumpre a sua função técnica.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="text-stone-900 font-bold mb-4 flex items-center gap-3">
+                                <iconify-icon icon="solar:bath-linear" class="text-champagne-500 text-2xl"></iconify-icon>
+                                Banho: Precisão Level Zero
+                            </h4>
+                            <p class="text-base mb-4">Eliminamos soleiras e degraus para criar uma transição invisível entre o quarto e o duche walk-in.</p>
+                            <ul class="text-sm space-y-2 list-disc list-inside">
+                                <li><strong>Pavimentos Contínuos:</strong> Vinis R10 ou cerâmicos de grande formato eliminam o risco de tropeços.</li>
+                                <li><strong>Acessórios Premium:</strong> Barras de apoio em preto mate ou bronze que se integram no design de luxo.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
+        <!-- Pilar III: Casos Reais -->
+        <section id="casos" class="py-32 px-6 md:px-12 bg-stone-50">
+            <div class="max-w-7xl mx-auto text-center">
+                <div class="mb-24">
+                    <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-champagne-500 mb-6 block">Pilar III</span>
+                    <h2 class="text-5xl md:text-6xl font-medium tracking-tight text-stone-900 font-serif">Casos Reais</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="group">
+                        <div class="aspect-video rounded-3xl overflow-hidden mb-8 relative shadow-xl">
+                            <img src="assets/kitchen_fluida.png" alt="Residência Sintra" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                        </div>
+                        <h4 class="text-xl font-serif text-stone-900">Residência Sintra</h4>
+                        <p class="text-stone-500 text-xs mt-3 uppercase tracking-widest font-bold font-sans">Cozinha S-Barreiras</p>
+                    </div>
+                    <div class="group">
+                        <div class="aspect-video rounded-3xl overflow-hidden mb-8 relative shadow-xl">
+                            <img src="assets/bathroom_walkin.png" alt="Apartamento Lisboa" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                        </div>
+                        <h4 class="text-xl font-serif text-stone-900">Apartamento Lisboa</h4>
+                        <p class="text-stone-500 text-xs mt-3 uppercase tracking-widest font-bold font-sans">Banho Level Zero</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="fiscalidade" class="py-32 px-6 md:px-12 max-w-7xl mx-auto border-t border-champagne-200/40">
             <div class="mb-24">
                 <span
@@ -577,6 +412,7 @@
                         inclinação para drenagem.</li>
                     <li><strong>Barrier-Free:</strong> A eliminação sistemática de todos os obstáculos arquitetónicos
                         como soleiras, pequenas pedras ou paredes de banheira.</li>
+                    <li><strong>Splash / Zona de Salpicos:</strong> Área em torno de lavatórios ou duches que requer revestimentos impermeáveis e de fácil limpeza, essencial para manter a higiene em espaços acessíveis.</li>
                 </ul>
 
                 <h4 class="text-2xl font-serif text-stone-900 mb-6">Guia Rápido de Acessórios</h4>
