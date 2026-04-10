@@ -1,0 +1,601 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espa├ºos sem Barreiras - Design Inclusivo & Arquitetura</title>
+
+    <meta name="description"
+        content="Guia de Design Inclusivo e Acessibilidade em Portugal. Aprenda a adaptar a sua casa com sofistica├º├úo e a beneficiar do IVA a 6% (Verba 2.27).">
+    <meta name="keywords"
+        content="Design Inclusivo, Acessibilidade, Portugal, IVA 6%, DL 163/2006, Decora├º├úo, Arquitetura">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    },
+                    colors: {
+                        champagne: {
+                            50: '#f7f1e9',
+                            100: '#efdfce',
+                            200: '#e1c6a6',
+                            300: '#d1a77b',
+                            400: '#c18a51',
+                            500: '#a36d39',
+                        },
+                        blush: {
+                            50: '#f6ece9',
+                            100: '#ecd9d2',
+                            200: '#e1c0b5',
+                            300: '#d1a090',
+                            400: '#c1806b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+
+            to {
+                opacity: 0.8;
+                transform: translateY(0);
+            }
+        }
+
+        details[open]>div {
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+
+        .logo-img {
+            display: block;
+            width: auto;
+            max-height: 210px;
+            object-fit: contain;
+            /* Surgically hide the AI star artifact in the bottom right */
+            clip-path: inset(0 5% 8% 0);
+        }
+
+        .bg-mesh {
+            background-color: #f7f1e9;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(25, 100%, 94%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(23, 100%, 92%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(30, 100%, 94%, 1) 0, transparent 50%);
+        }
+    </style>
+</head>
+
+<body class="bg-champagne-50 text-stone-800 antialiased font-sans selection:bg-blush-100 scroll-smooth">
+
+    <header class="fixed top-0 w-full bg-white/98 backdrop-blur-xl z-50 border-b border-champagne-200/40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-2 md:py-4 flex justify-between items-center">
+            <!-- Original Image Logo -->
+            <a href="#" aria-label="In├¡cio ÔÇö Cristiana Azevedo Atelier"
+                class="relative flex items-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-champagne-400 focus-visible:ring-offset-2 rounded-sm transform transition hover:scale-[1.01]">
+                <img src="assets/logo.png" alt="Cristiana Azevedo Atelier Logo" class="logo-img h-16 md:h-24">
+            </a>
+
+            <nav class="hidden lg:flex gap-10 items-center">
+                <a href="#ambientes"
+                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Ambientes</a>
+                <a href="#portfolio"
+                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Portfolio</a>
+                <a href="#materiais"
+                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Materiais</a>
+                <a href="#fiscalidade"
+                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Fiscalidade</a>
+                <a href="#faq"
+                    class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">FAQ</a>
+            </nav>
+            <button class="lg:hidden text-stone-900 pt-2"><iconify-icon icon="solar:hamburger-menu-linear" width="28"
+                    height="28"></iconify-icon></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="pt-32 pb-16 md:pt-40 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto bg-mesh">
+            <div class="flex flex-col items-center text-center max-w-4xl mx-auto mb-16 md:mb-24">
+                <h1
+                    class="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter text-stone-900 mb-10 leading-none uppercase font-serif">
+                    Espa├ºos sem<br>Barreiras</h1>
+                <p class="text-xl md:text-2xl text-stone-500 leading-relaxed max-w-2xl font-light italic">
+                    "Transformar o lugar para libertar a vida."
+                </p>
+                <div class="w-16 h-px bg-champagne-300 my-10"></div>
+                <p class="text-base md:text-lg text-stone-400 max-w-2xl font-light leading-loose">
+                    Neste espa├ºo, traduzimos a legisla├º├úo para o mundo do design, mostrando que a acessibilidade ├®,
+                    acima de
+                    tudo, uma forma superior de conforto para todos.
+                </p>
+            </div>
+            <div
+                class="w-full aspect-[4/3] md:aspect-[21/9] bg-white rounded-[3rem] overflow-hidden relative group shadow-2xl shadow-champagne-300/20 border border-white">
+                <img src="assets/quarto_inclusivo_new.png"
+                    alt="Quarto amplo em tons suaves de verde com acesso cont├¡nuo a uma casa de banho adaptada e moderna."
+                    class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105"
+                    loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-tr from-champagne-100/10 to-transparent"></div>
+            </div>
+        </section>
+
+        <section id="ambientes" class="py-32 px-6 md:px-12 max-w-7xl mx-auto border-t border-champagne-200/60">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+                <div class="max-w-2xl">
+                    <span
+                        class="text-[10px] font-bold tracking-[0.3em] uppercase text-champagne-500 mb-6 block">Directrizes
+                        Espaciais</span>
+                    <h2 class="text-5xl md:text-6xl font-medium tracking-tight text-stone-900 font-serif">Ambientes</h2>
+                </div>
+                <p class="text-base text-stone-400 max-w-xs md:text-right leading-relaxed italic font-light">A ergonomia
+                    invis├¡vel que
+                    garante autonomia e beleza em cada divis├úo.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-24">
+                <article class="group relative">
+                    <div
+                        class="aspect-[4/5] overflow-hidden rounded-[2.5rem] bg-white mb-10 shadow-xl group-hover:shadow-2xl transition-all duration-700 border border-champagne-100">
+                        <img src="assets/kitchen_fluida.png"
+                            alt="Cozinha moderna acess├¡vel com bancadas suspensas e raio de manobra amplo."
+                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    </div>
+                    <h3 class="text-3xl font-medium mb-6 text-stone-900 font-serif">A Cozinha Fluida</h3>
+                    <p class="text-base text-stone-500 font-light leading-relaxed mb-4">Foco no raio de rota├º├úo livre de
+                        1,50m.
+                        Bancadas suspensas (0,70m-0,80m) que aliam funcionalidade extrema a uma est├®tica depurada.
+                    </p>
+                    <ul class="text-sm text-stone-600 font-light space-y-2 list-disc list-inside">
+                        <li>Sem arm├írios inferiores na zona de lavagem para acesso em cadeira de rodas.</li>
+                        <li>Eletrodom├®sticos ├á altura dos olhos para evitar curvar.</li>
+                        <li>Sistemas de gavetas deslizantes para alcance f├ícil.</li>
+                    </ul>
+                </article>
+
+                <article class="group mt-0 md:mt-24">
+                    <div
+                        class="aspect-[4/5] overflow-hidden rounded-[2.5rem] bg-white mb-10 shadow-xl group-hover:shadow-2xl transition-all duration-700 border border-champagne-100">
+                        <img src="assets/bathroom_walkin.png"
+                            alt="Casa de banho de luxo nivelada, walk-in puro com barras de apoio em preto mate sobre m├írmore."
+                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    </div>
+                    <h3 class="text-3xl font-medium mb-6 text-stone-900 font-serif">O Ref├║gio: WC Walk-in</h3>
+                    <p class="text-base text-stone-500 font-light leading-relaxed mb-4">Bases niveladas, v├úos de 0,80m e
+                        acess├│rios
+                        premium que eliminam o aspeto cl├¡nico, focando na seguran├ºa e no luxo.
+                    </p>
+                    <ul class="text-sm text-stone-600 font-light space-y-2 list-disc list-inside">
+                        <li>Sem desn├¡veis ou degraus entre quarto e casa de banho ("Level Zero").</li>
+                        <li>Sanitas e lavat├│rios suspensos para garantir plano de ch├úo livre.</li>
+                        <li>Barras de apoio pretas mate em contraste com m├írmore branco.</li>
+                    </ul>
+                </article>
+
+                <article class="group mt-0 md:mt-48">
+                    <div
+                        class="aspect-[4/5] overflow-hidden rounded-[2.5rem] bg-white mb-10 shadow-xl group-hover:shadow-2xl transition-all duration-700 border border-champagne-100">
+                        <img src="assets/bedroom_smart.png"
+                            alt="Quarto projetado de forma universal com amplo espa├ºo, roupeiros abertos, luz inteligente e cama suspensa."
+                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    </div>
+                    <h3 class="text-3xl font-medium mb-6 text-stone-900 font-serif">Quarto & Dom├│tica</h3>
+                    <p class="text-base text-stone-500 font-light leading-relaxed mb-4">Circula├º├úo desimpedida e
+                        integra├º├úo
+                        de
+                        tecnologia inteligente (Smart Home) para controlo de luz e temperatura sem esfor├ºo.
+                    </p>
+                    <ul class="text-sm text-stone-600 font-light space-y-2 list-disc list-inside">
+                        <li>Mobili├írio evolutivo: roupeiros abertos para raio de 1,50m org├ónico.</li>
+                        <li>Contraste crom├ítico entre hardware escuro e paredes claras para vis├úo subnormal.</li>
+                        <li>Camas articuladas e mesas de cabeceira suspensas.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <!-- Pilares -->
+            <div class="mt-32 border-t border-champagne-100 pt-24">
+                <div class="text-center mb-16">
+                    <span
+                        class="text-[10px] font-bold tracking-[0.3em] uppercase text-champagne-500 mb-4 block">Princ├¡pios</span>
+                    <h3
+                        class="text-3xl md:text-4xl font-medium font-serif text-stone-900 border-b border-champagne-200 inline-block pb-6">
+                        Os 4 Pilares do Design Universal</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <div
+                        class="bg-white p-8 rounded-3xl shadow-sm border border-champagne-50 hover:shadow-xl transition-shadow">
+                        <div class="w-12 h-12 rounded-2xl bg-champagne-100 flex items-center justify-center mb-6">
+                            <iconify-icon icon="solar:users-group-two-rounded-bold"
+                                class="text-champagne-500 text-xl"></iconify-icon>
+                        </div>
+                        <h4 class="text-lg font-bold text-stone-900 mb-3">Uso Equitativo</h4>
+                        <p class="text-sm text-stone-500">O espa├ºo deve ser id├¬ntico para todos. Um duche walk-in ├® uma
+                            escolha est├®tica luxuosa que, por acaso, ├® o mais acess├¡vel.</p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-3xl shadow-sm border border-champagne-50 hover:shadow-xl transition-shadow">
+                        <div class="w-12 h-12 rounded-2xl bg-champagne-100 flex items-center justify-center mb-6">
+                            <iconify-icon icon="solar:slider-vertical-bold"
+                                class="text-champagne-500 text-xl"></iconify-icon>
+                        </div>
+                        <h4 class="text-lg font-bold text-stone-900 mb-3">Flexibilidade</h4>
+                        <p class="text-sm text-stone-500">Elementos como lavat├│rios suspensos permitem o uso
+                            confort├ível, quer se esteja de p├® ou sentado.</p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-3xl shadow-sm border border-champagne-50 hover:shadow-xl transition-shadow">
+                        <div class="w-12 h-12 rounded-2xl bg-champagne-100 flex items-center justify-center mb-6">
+                            <iconify-icon icon="solar:hand-stars-bold"
+                                class="text-champagne-500 text-xl"></iconify-icon>
+                        </div>
+                        <h4 class="text-lg font-bold text-stone-900 mb-3">Simplicidade</h4>
+                        <p class="text-sm text-stone-500">O uso de misturadoras monocomando e ilumina├º├úo com sensor
+                            elimina a necessidade de for├ºa f├¡sica ou destreza manual complexa.</p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-3xl shadow-sm border border-champagne-50 hover:shadow-xl transition-shadow">
+                        <div class="w-12 h-12 rounded-2xl bg-champagne-100 flex items-center justify-center mb-6">
+                            <iconify-icon icon="solar:leaf-bold" class="text-champagne-500 text-xl"></iconify-icon>
+                        </div>
+                        <h4 class="text-lg font-bold text-stone-900 mb-3">Baixo Esfor├ºo F├¡sico</h4>
+                        <p class="text-sm text-stone-500">A utiliza├º├úo de portas de correr facilita muito a manobra para
+                            quem tem limita├º├Áes de for├ºa ou mobilidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-32 px-6 md:px-12 bg-blush-50 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto relative z-10">
+                <div class="mb-24 text-center">
+                    <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-blush-400 mb-6 block">Estudos de
+                        Caso</span>
+                    <h2 class="text-5xl md:text-6xl font-medium tracking-tight text-stone-900 font-serif">Antes e
+                        Depois:<br>Transforma├º├Áes
+                        Reais</h2>
+                    <div class="w-16 h-px bg-blush-200 mx-auto my-10"></div>
+                </div>
+
+                <div class="space-y-32">
+                    <!-- Transformation 1: Kitchen -->
+                    <article class="group relative">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 mb-12">
+                            <div
+                                class="aspect-[4/3] rounded-[2rem] overflow-hidden bg-white relative shadow-2xl border border-white">
+                                <span
+                                    class="absolute top-6 left-6 bg-stone-900 text-white text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest z-10 font-bold">Antes</span>
+                                <img src="assets/kitchen_before.png"
+                                    alt="Cozinha antiga e gen├®rica com barreira arquitet├│nicas como m├│veis e eletrodom├®sticos de dif├¡cil alcance."
+                                    class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-[1s]">
+                            </div>
+                            <div
+                                class="aspect-[4/3] rounded-[2rem] overflow-hidden bg-white relative shadow-2xl border border-white group-hover:shadow-[0_20px_50px_rgba(209,160,144,0.3)] transition-all duration-700">
+                                <span
+                                    class="absolute top-6 left-6 bg-blush-50 text-stone-900 text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest font-bold z-10 border border-blush-100 shadow-sm">Depois</span>
+                                <img src="assets/kitchen_fluida.png"
+                                    alt="Mesma cozinha transformada num espa├ºo adaptado com design moderno e desimpedido."
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                            <div class="md:col-span-8">
+                                <h3 class="text-3xl font-medium text-stone-900 mb-4 font-serif">A Cozinha Inclusiva
+                                    (Resid├¬ncia Sintra)</h3>
+                                <p class="text-lg text-stone-500 font-light leading-relaxed">A elimina├º├úo de arm├írios
+                                    inferiores em zonas chave permitiu o uso total em cadeira de rodas. Uma pen├¡nsula
+                                    estruturada com eletrodom├®sticos ├á altura dos olhos e sistemas remov├¡veis sob a
+                                    bancada trouxeram autonomia sem comprometer a est├®tica luxuosa.</p>
+                            </div>
+                            <div class="md:col-span-4 flex items-center h-full md:justify-end">
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-[0.3em] text-blush-500 border border-blush-200 px-4 py-2 rounded-full">Projecto
+                                    Conclu├¡do</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Transformation 2: Bathroom -->
+                    <article class="group relative">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 mb-12">
+                            <div
+                                class="aspect-[4/3] rounded-[2rem] overflow-hidden bg-white relative shadow-2xl border border-white">
+                                <span
+                                    class="absolute top-6 left-6 bg-stone-900 text-white text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest z-10 font-bold">Antes</span>
+                                <img src="assets/bathroom_before.png"
+                                    alt="Casa de banho padr├úo inacess├¡vel, com banheira de borda alta."
+                                    class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-[1s]">
+                            </div>
+                            <div
+                                class="aspect-[4/3] rounded-[2rem] overflow-hidden bg-white relative shadow-2xl border border-white group-hover:shadow-[0_20px_50px_rgba(209,160,144,0.3)] transition-all duration-700">
+                                <span
+                                    class="absolute top-6 left-6 bg-blush-50 text-stone-900 text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest font-bold z-10 border border-blush-100 shadow-sm">Depois</span>
+                                <img src="assets/bathroom_walkin.png"
+                                    alt="Casa de banho luxuosa inteiramente convertida num espa├ºo Level Zero com base walk-in invis├¡vel."
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                            <div class="md:col-span-8">
+                                <h3 class="text-3xl font-medium text-stone-900 mb-4 font-serif">O Ref├║gio N├¡vel Zero
+                                    (Apartamento Lisboa)</h3>
+                                <p class="text-lg text-stone-500 font-light leading-relaxed">Substitui├º├úo da antiga
+                                    banheira restritiva por um duche walk-in ao n├¡vel do ch├úo (Barrier-Free). A
+                                    aplica├º├úo de ferragens e barras de apoio em preto mate sobre um fundo cont├¡nuo claro
+                                    oferece orienta├º├úo visual forte e um visual de hotel boutique.</p>
+                            </div>
+                            <div class="md:col-span-4 flex items-center h-full md:justify-end">
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-[0.3em] text-blush-500 border border-blush-200 px-4 py-2 rounded-full">Projecto
+                                    Conclu├¡do</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-white/20 rounded-full blur-3xl"></div>
+        </section>
+
+        <section id="materiais" class="py-32 px-6 md:px-12 max-w-7xl mx-auto border-t border-champagne-200/40">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                <div
+                    class="aspect-[4/5] rounded-[3rem] overflow-hidden bg-white shadow-2xl shadow-champagne-100/50 border border-white">
+                    <img src="assets/materials.png"
+                        alt="Texturas ricas com forte contraste - vinil continuo de aspeto madeira cont├¡guo a rodap├®s demarcados."
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="max-w-xl">
+                    <span
+                        class="text-[10px] font-bold tracking-[0.4em] uppercase text-champagne-500 mb-10 block font-bold">Materialidade
+                        & Sensa├º├úo</span>
+                    <h2 class="text-5xl md:text-6xl font-medium mb-12 leading-[1.1] font-serif text-stone-900">A
+                        Ess├¬ncia do Conforto Invis├¡vel.</h2>
+                    <div class="space-y-10 text-stone-500 text-lg md:text-xl leading-relaxed font-light mb-12">
+                        <p>Optar por <strong>pavimentos cont├¡nuos</strong> (ex: Vinil R10 Antiderrapante Natural Oak)
+                            remove obst├ículos visuais e f├¡sicos, criando
+                            uma percep├º├úo de amplitude infinita.</p>
+                        <p>O uso inteligente de <strong>contrastes crom├íticos</strong>, como a "Eleg├óncia Industrial"
+                            misturando M├írmore Carrara e Ard├│sia Preta, orienta
+                            naturalmente a circula├º├úo, garantindo seguran├ºa para todos sem sacrificar a beleza.</p>
+                        <p>Na intera├º├úo com os elementos, o <strong>toque e a ader├¬ncia</strong> s├úo fundamentais:
+                            substitu├¡mos ma├ºanetas redondas e perigosas por puxadores em 'C', criando uma est├®tica
+                            elegante e funcional.</p>
+                    </div>
+                    <div class="w-16 h-px bg-champagne-300"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fiscalidade" class="py-32 px-6 md:px-12 max-w-7xl mx-auto border-t border-champagne-200/40">
+            <div class="mb-24">
+                <span
+                    class="text-[10px] font-bold tracking-[0.4em] uppercase text-champagne-400 mb-6 block font-bold">Base
+                    Normativa & Fiscal</span>
+                <h2 class="text-5xl md:text-6xl font-medium tracking-tight text-stone-900 font-serif leading-tight">
+                    Fiscalidade no Design</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 md:gap-24">
+                <!-- Part 1: DL 163/2006 -->
+                <div class="group">
+                    <div
+                        class="w-16 h-16 rounded-3xl bg-stone-900 flex items-center justify-center shadow-xl mb-10 transition-transform group-hover:scale-110 duration-500">
+                        <iconify-icon icon="solar:ruler-pen-linear" class="text-white text-3xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-2xl font-medium text-stone-900 mb-6 font-serif leading-tight">Normas T├®cnicas:<br>DL
+                        163/2006</h3>
+                    <p class="text-base text-stone-500 font-light leading-relaxed">
+                        Estabelece as normas t├®cnicas para elimina├º├úo de barreiras arquitet├│nicas quer em novas
+                        constru├º├Áes quer em reabilita├º├Áes profundas. Desde passagens de <strong>0,80m</strong> a raios
+                        de rota├º├úo de <strong>1,50m</strong>, o design que n├úo segue a norma n├úo ├® design universal.
+                    </p>
+                </div>
+
+                <!-- Part 2: Vantagem Fiscal -->
+                <div class="group">
+                    <div
+                        class="w-16 h-16 rounded-3xl bg-stone-900 flex items-center justify-center shadow-xl mb-10 transition-transform group-hover:scale-110 duration-500">
+                        <iconify-icon icon="solar:bill-list-linear" class="text-white text-3xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-2xl font-medium text-stone-900 mb-6 font-serif leading-tight">Vantagem
+                        Fiscal:<br>Habita├º├úo Aflita</h3>
+                    <p class="text-base text-stone-500 font-light leading-relaxed">
+                        Maximize o retorno do seu investimento. Existem programas p├║blicos (PARES, Porta 65) e apoios
+                        locais pelas C├ómaras Municipais ("Habita├º├úo Aflita") pensados para financiar e comparticipar a
+                        adapta├º├úo da sua casa e de partes comuns em condom├¡nios.
+                    </p>
+                </div>
+
+                <!-- Part 3: AMIM -->
+                <div class="group">
+                    <div
+                        class="w-16 h-16 rounded-3xl bg-stone-900 flex items-center justify-center shadow-xl mb-10 transition-transform group-hover:scale-110 duration-500">
+                        <iconify-icon icon="solar:verified-check-linear" class="text-white text-3xl"></iconify-icon>
+                    </div>
+                    <h3 class="text-2xl font-medium text-stone-900 mb-6 font-serif leading-tight">Elegibilidade:<br>O
+                        Atestado AMIM</h3>
+                    <p class="text-base text-stone-500 font-light leading-relaxed">
+                        O ideal ├® come├ºar por obter um Atestado M├®dico de Incapacidade Multiuso (AMIM), pois este ├® o
+                        documento chave que desbloqueia a maioria dos apoios financeiros e fiscais referidos.
+                    </p>
+                    <div class="pt-10">
+                        <a href="legislacao.html"
+                            class="text-[11px] font-bold uppercase tracking-[0.3em] text-stone-900 hover:text-champagne-500 transition-colors flex items-center gap-3">
+                            Consultar Legisla├º├úo Completa <iconify-icon icon="solar:arrow-right-linear"
+                                class="text-base"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-40 px-6 md:px-12 max-w-4xl mx-auto">
+            <div class="text-center mb-24">
+                <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-stone-400 mb-6 block">Quest├Áes
+                    Frequentes</span>
+                <h2 class="text-4xl font-medium text-stone-900 uppercase tracking-widest font-serif leading-tight">
+                    D├║vidas Comuns</h2>
+            </div>
+            <div class="space-y-4">
+                <details class="group border-b border-champagne-200 pb-4">
+                    <summary
+                        class="flex justify-between items-center py-8 cursor-pointer list-none font-medium text-xl text-stone-900 hover:text-champagne-500 transition-colors">
+                        O design inclusivo desvaloriza a est├®tica do im├│vel?
+                        <span class="transition-transform group-open:-rotate-180 opacity-40"><iconify-icon
+                                icon="solar:alt-arrow-down-linear"></iconify-icon></span>
+                    </summary>
+                    <div class="text-lg text-stone-500 pb-10 font-light leading-relaxed">
+                        Pelo contr├írio. O "Universal Design" ├® uma tend├¬ncia global de luxo que prioriza espa├ºos amplos,
+                        luz natural e dom├│tica avanzada, valorizando significativamente o im├│vel.
+                    </div>
+                </details>
+                <details class="group border-b border-champagne-200 pb-4">
+                    <summary
+                        class="flex justify-between items-center py-8 cursor-pointer list-none font-medium text-xl text-stone-900 hover:text-champagne-500 transition-colors">
+                        Qual ├® o primeiro passo para iniciar uma adapta├º├úo?
+                        <span class="transition-transform group-open:-rotate-180 opacity-40"><iconify-icon
+                                icon="solar:alt-arrow-down-linear"></iconify-icon></span>
+                    </summary>
+                    <div class="text-lg text-stone-500 pb-10 font-light leading-relaxed">
+                        O primeiro passo ├® uma avalia├º├úo t├®cnica detalhada das necessidades actuais e futuras,
+                        cruzando-as com as m├®tricas do DL 163/2006 para um projecto vi├ível e elegante.
+                    </div>
+                </details>
+                <details class="group border-b border-champagne-200 pb-4">
+                    <summary
+                        class="flex justify-between items-center py-8 cursor-pointer list-none font-medium text-xl text-stone-900 hover:text-champagne-500 transition-colors">
+                        Uma casa acess├¡vel pode evitar parecer-se com um hospital?
+                        <span class="transition-transform group-open:-rotate-180 opacity-40"><iconify-icon
+                                icon="solar:alt-arrow-down-linear"></iconify-icon></span>
+                    </summary>
+                    <div class="text-lg text-stone-500 pb-10 font-light leading-relaxed">
+                        Absolutamente. Isso consegue-se usando acabamentos de alta gama (high-end finishings) como
+                        pretos mate nas ferragens, lat├úo, ou madeiras tratadas nas barras de apoio em vez dos cromados
+                        institucionais.
+                    </div>
+                </details>
+                <details class="group border-b border-champagne-200 pb-4">
+                    <summary
+                        class="flex justify-between items-center py-8 cursor-pointer list-none font-medium text-xl text-stone-900 hover:text-champagne-500 transition-colors">
+                        Qual a verdadeira vantagem de aplicar a Dom├│tica?
+                        <span class="transition-transform group-open:-rotate-180 opacity-40"><iconify-icon
+                                icon="solar:alt-arrow-down-linear"></iconify-icon></span>
+                    </summary>
+                    <div class="text-lg text-stone-500 pb-10 font-light leading-relaxed">
+                        O controlo por voz ou por sensores das luzes, dos estores ou da temperatura aumenta enormemente
+                        a autonomia, o conforto e, sobretudo, a seguran├ºa dentro de casa, reduzindo obst├ículos
+                        silenciosos do dia a dia.
+                    </div>
+                </details>
+            </div>
+
+            <!-- Gloss├írio e Guia de Compras R├ípido -->
+            <div class="mt-20 bg-champagne-50/50 p-8 md:p-12 rounded-[2rem] border border-champagne-200">
+                <h4 class="text-2xl font-serif text-stone-900 mb-6">Gloss├írio Essencial</h4>
+                <ul class="text-sm text-stone-600 mb-12 space-y-4 font-light">
+                    <li><strong>Level Zero Bathroom:</strong> Casa de banho sem qualquer degrau ou varia├º├úo de altura a
+                        partir do quarto.</li>
+                    <li><strong>Walk-in / Italian Shower:</strong> ├ürea de duche cont├¡nua ao n├¡vel do ch├úo com subtil
+                        inclina├º├úo para drenagem.</li>
+                    <li><strong>Barrier-Free:</strong> A elimina├º├úo sistem├ítica de todos os obst├ículos arquitet├│nicos
+                        como soleiras, pequenas pedras ou paredes de banheira.</li>
+                </ul>
+
+                <h4 class="text-2xl font-serif text-stone-900 mb-6">Guia R├ípido de Acess├│rios</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm text-stone-500 font-light">
+                    <div class="flex items-start gap-4">
+                        <iconify-icon icon="solar:check-circle-linear"
+                            class="text-champagne-500 text-xl shrink-0"></iconify-icon>
+                        <p><strong>Torneiras Eletr├│nicas ou Alavanca</strong><br>Bruma, Grohe, ou Roca.</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <iconify-icon icon="solar:check-circle-linear"
+                            class="text-champagne-500 text-xl shrink-0"></iconify-icon>
+                        <p><strong>Barras de Apoio "New Generation"</strong><br>Ponte Giulio ou Keuco (Preto
+                            matte/Bronze).</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <iconify-icon icon="solar:check-circle-linear"
+                            class="text-champagne-500 text-xl shrink-0"></iconify-icon>
+                        <p><strong>Sistemas de Duche Termost├íticos</strong><br>Previne queimaduras na pele.</p>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <iconify-icon icon="solar:check-circle-linear"
+                            class="text-champagne-500 text-xl shrink-0"></iconify-icon>
+                        <p><strong>Ilumina├º├úo Inteligente</strong><br>Espelhos retroiluminados e LEDs de sensor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white py-32 px-6 border-t border-champagne-100 relative">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-24">
+            <div class="max-w-md">
+                <!-- Original Image Logo in Footer -->
+                <div class="mb-12 block relative w-fit">
+                    <img src="assets/logo.png" alt="Cristiana Azevedo Atelier Logo"
+                        class="logo-img h-36 md:h-48 opacity-90">
+                </div>
+                <p class="text-base text-stone-400 font-light leading-loose italic pr-12">
+                    "Arquitetura sens├¡vel e t├®cnica ao servi├ºo da autonomia humana. A promover o design inclusivo em
+                    Portugal com rigor e sofistica├º├úo."
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-20 md:gap-40">
+                <div>
+                    <h4 class="text-stone-900 text-[11px] font-bold mb-12 uppercase tracking-[0.4em]">Atelier</h4>
+                    <ul class="space-y-8 text-xs text-stone-400 font-medium uppercase tracking-[0.3em]">
+                        <li><a href="#ambientes" class="hover:text-stone-900 transition-colors">Ambientes</a></li>
+                        <li><a href="#portfolio" class="hover:text-stone-900 transition-colors">Portfolio</a></li>
+                        <li><a href="#materiais" class="hover:text-stone-900 transition-colors">Materiais</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-stone-900 text-[11px] font-bold mb-12 uppercase tracking-[0.4em]">Contacto</h4>
+                    <ul class="space-y-8 text-xs text-stone-400 font-medium">
+                        <li><a href="mailto:geral@cristianaazevedo.pt"
+                                class="hover:text-stone-900 transition-colors uppercase tracking-[0.3em]">geral@cristianaazevedo.pt</a>
+                        </li>
+                        <li class="flex gap-10 pt-6">
+                            <a href="#"
+                                class="text-stone-300 hover:text-stone-900 transition-colors transform hover:-translate-y-1 transition-all"><iconify-icon
+                                    icon="solar:camera-linear" class="text-3xl"></iconify-icon></a>
+                            <a href="#"
+                                class="text-stone-300 hover:text-stone-900 transition-colors transform hover:-translate-y-1 transition-all"><iconify-icon
+                                    icon="solar:letter-linear" class="text-3xl"></iconify-icon></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto mt-40 pt-16 border-t border-stone-100 flex flex-col sm:flex-row justify-between items-center gap-10 text-[10px] text-stone-300 uppercase tracking-[0.3em] font-bold">
+            <p>┬® 2026 Cristiana Azevedo Atelier. Todos os direitos reservados.</p>
+            <div class="flex gap-16">
+                <a href="#" class="hover:text-stone-900 transition-colors">Privacidade</a>
+                <a href="#" class="hover:text-stone-900 transition-colors">Termos</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
