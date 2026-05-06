@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Classification Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10">
+    <h1 class="text-3xl font-bold mb-10 text-center">Espaços sem Barreiras - Image Gallery</h1>
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <script>
+            const images = [
+                "Gemini_Generated_Image_5mug175mug175mug.png",
+                "Gemini_Generated_Image_8fe29a8fe29a8fe2.png",
+                "Gemini_Generated_Image_i9u42ri9u42ri9u4 (2).png",
+                "Gemini_Generated_Image_i9u42ri9u42ri9u4.png",
+                "hero_inclusive_suite.png",
+                "image (37).png",
+                "image (38).png",
+                "image (39).png",
+                "image (40).png",
+                "image (41).png",
+                "image (42).png",
+                "image (43).png",
+                "image (44).png",
+                "image (45).png",
+                "image (46).png",
+                "image (47).png",
+                "image (48).png",
+                "image (49).png",
+                "image (50).png",
+                "image (51).png",
+                "image (52).png",
+                "image (53).png",
+                "image (54).png",
+                "image (57).png",
+                "image_0139188a-64f8-4522-a98c-c6ede1e682b7 (2).png",
+                "image_18a55199-4a8d-4304-9366-1e6b75e1f370 (1).png",
+                "image_26f5dff2-7af2-431a-8020-bd225ac2bca0 (1).png",
+                "image_2c2fd574-a24d-4379-9fc5-4c10b1b13921 (1).png",
+                "image_31a77d17-8b4d-468a-8273-76c61b0251f6 (1).png",
+                "image_3a0fa9c1-2299-4feb-9f93-286812c2cd53 (3).png",
+                "image_4a224162-8d3c-480a-ba98-1b026aeb613d (2).png",
+                "image_528bcddc-08af-451c-8a51-0bf64a544d3e (1).png",
+                "image_535ef8a5-dd86-4307-8c66-ef803dd6c22d (1).png",
+                "image_55.png",
+                "image_7acca461-7e60-4f34-8a62-b699b4b1375c.png",
+                "image_7f8c8c78-42ba-40ab-b301-33a91769e706.png",
+                "image_88bf2a26-8df3-42b9-bc77-23b918d035a2 (1).png",
+                "image_90829527-13e2-4b01-bf3d-34f76f3296ce (2).png",
+                "image_94213883-6a03-4471-b75b-ff05d3a909be (1).png",
+                "image_c020ee79-c5c4-4e83-b5d5-f8ebd0b66154 (1).png",
+                "image_c89d23f8-fa32-41bc-9c40-1f01563d8879 (3).png",
+                "image_d7ff1b71-2493-4e6c-94da-11256a98cc1e (1).png",
+                "image_e789af8f-962d-4cf4-b473-3e972fad96f7 (1).png",
+                "image_e9007535-bffa-4457-967e-38406e777f37.png",
+                "image_f2fb981d-5503-431d-8166-dd5b26d9207e (1).png",
+                "img12.png",
+                "img2.png",
+                "img7.png",
+                "logo_limpo.png",
+                "suite-inclu.png",
+                "visual_impairment.png"
+            ];
+            
+            images.forEach(img => {
+                document.write(`
+                    <div class="bg-white p-2 rounded shadow">
+                        <img src="assets/new_images/${img}" class="w-full h-40 object-cover rounded mb-2">
+                        <p class="text-[10px] break-all text-center">${img}</p>
+                    </div>
+                `);
+            });
+        </script>
+    </div>
+</body>
+</html>
