@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos & Apoio - Espaços sem Barreiras</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    },
+                    colors: {
+                        champagne: {
+                            50: '#f7f1e9',
+                            100: '#efdfce',
+                            200: '#e1c6a6',
+                            300: '#d1a77b',
+                            400: '#c18a51',
+                            500: '#a36d39',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .logo-img {
+            display: block;
+            width: auto;
+            max-height: 210px;
+            object-fit: contain;
+            clip-path: inset(0 5% 8% 0);
+        }
+
+        .bg-mesh {
+            background-color: #f7f1e9;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(25, 100%, 94%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(23, 100%, 92%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(30, 100%, 94%, 1) 0, transparent 50%);
+        }
+
+        .sidebar-link.active {
+            color: #a36d39;
+            border-left: 2px solid #a36d39;
+            padding-left: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="bg-champagne-50 text-stone-800 antialiased font-sans scroll-smooth">
+
+    <header class="fixed top-0 w-full bg-white/98 backdrop-blur-xl z-50 border-b border-champagne-200/40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-2 md:py-4 flex justify-between items-center">
+            <a href="index.html" class="relative flex items-center">
+                <img src="assets/new_images/LOGO.png" alt="Logo" class="logo-img h-16 md:h-24">
+                <span class="ml-4 pl-4 border-l border-champagne-200 text-stone-500 font-serif text-lg italic hidden sm:block">Recursos & Apoio</span>
+            </a>
+
+            <nav class="hidden lg:flex gap-10 items-center">
+                <a href="index.html" class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-colors">Início</a>
+                <div class="relative group">
+                    <a class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 group-hover:text-stone-900 flex items-center gap-1 cursor-pointer">Divisões <iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon></a>
+                    <div class="absolute top-full left-0 mt-4 bg-white border border-champagne-200 shadow-xl rounded-xl py-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all flex flex-col gap-4 min-w-[200px]">
+                        <a href="cozinhas.html" class="text-xs uppercase tracking-[0.2em] font-bold text-stone-500 hover:text-champagne-500 px-6">Cozinhas</a>
+                        <a href="banhos.html" class="text-xs uppercase tracking-[0.2em] font-bold text-stone-500 hover:text-champagne-500 px-6">Casas de Banho</a>
+                        <a href="salas.html" class="text-xs uppercase tracking-[0.2em] font-bold text-stone-500 hover:text-champagne-500 px-6">Salas</a>
+                        <a href="quartos.html" class="text-xs uppercase tracking-[0.2em] font-bold text-stone-500 hover:text-champagne-500 px-6">Quartos</a>
+                    </div>
+                </div>
+                <a href="#" class="text-xs uppercase tracking-[0.2em] font-bold text-champagne-500">Recursos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-48 pb-32 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row gap-20">
+                <!-- Sidebar -->
+                <aside class="lg:w-1/4">
+                    <div class="sticky top-48">
+                        <h3 class="text-[10px] font-bold tracking-[0.4em] uppercase text-stone-400 mb-12">Conteúdo</h3>
+                        <nav class="flex flex-col gap-8">
+                            <a href="#direitos" class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-all border-l-2 border-transparent pl-6 hover:border-champagne-300">Direitos & Fiscalidade</a>
+                            <a href="#glossario" class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-all border-l-2 border-transparent pl-6 hover:border-champagne-300">Glossário Técnico</a>
+                            <a href="#faq" class="text-xs uppercase tracking-[0.2em] font-bold text-stone-400 hover:text-stone-900 transition-all border-l-2 border-transparent pl-6 hover:border-champagne-300">FAQ</a>
+                        </nav>
+                    </div>
+                </aside>
+
+                <!-- Content Area -->
+                <div class="lg:w-3/4 space-y-40">
+                    
+                    <!-- Section: Direitos & Fiscalidade -->
+                    <section id="direitos">
+                        <div class="mb-12">
+                            <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-champagne-500 mb-4 block">Enquadramento Legal</span>
+                            <h2 class="text-4xl md:text-5xl font-serif text-stone-900">Direitos e Incentivos Fiscais</h2>
+                        </div>
+                        <div class="grid grid-cols-1 gap-8 text-lg text-stone-500 font-light leading-relaxed">
+                            <div class="p-10 bg-white rounded-[3rem] shadow-sm border border-champagne-100 group hover:shadow-xl transition-shadow">
+                                <div class="flex items-center gap-4 mb-6">
+                                    <iconify-icon icon="solar:bill-list-linear" class="text-champagne-500 text-3xl"></iconify-icon>
+                                    <h4 class="text-stone-900 font-bold text-xl">IVA a 6% (Verba 2.27)</h4>
+                                </div>
+                                <p class="mb-4">Sabia que pode beneficiar da taxa reduzida de IVA em obras de adaptação? A Verba 2.27 da Lista I anexa ao Código do IVA permite aplicar 6% em:</p>
+                                <ul class="list-disc pl-6 space-y-2 text-base">
+                                    <li>Adaptação de equipamentos e instalações em habitações próprias.</li>
+                                    <li>Eliminação de barreiras arquitetónicas.</li>
+                                    <li>Instalação de rampas e elevadores residenciais.</li>
+                                </ul>
+                            </div>
+
+                            <div class="p-10 bg-stone-900 text-white rounded-[3rem] shadow-xl">
+                                <div class="flex items-center gap-4 mb-6">
+                                    <iconify-icon icon="solar:document-bold-duotone" class="text-champagne-300 text-3xl"></iconify-icon>
+                                    <h4 class="text-champagne-300 font-bold text-xl">Legislação de Condomínio</h4>
+                                </div>
+                                <p class="opacity-80 mb-6">O <strong>Artigo 1425.º do Código Civil</strong> garante que condóminos com incapacidade superior a 60% podem realizar obras de acessibilidade (como rampas ou plataformas elevatórias) sem depender da aprovação da assembleia, desde que o custo seja suportado pelo próprio e não prejudique a segurança do edifício.</p>
+                                <div class="p-6 bg-white/5 rounded-2xl border border-white/10">
+                                    <h5 class="text-sm font-bold uppercase tracking-widest mb-2">Pilar Técnico</h5>
+                                    <p class="text-sm italic opacity-70">"O DL 163/2006 define as normas técnicas de acessibilidade obrigatórias em edifícios habitacionais."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section: Glossário Expandido -->
+                    <section id="glossario">
+                        <div class="mb-12">
+                            <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-champagne-500 mb-4 block">Terminologia Inclusiva</span>
+                            <h2 class="text-4xl md:text-5xl font-serif text-stone-900">Glossário Técnico</h2>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+                            <div class="border-b border-champagne-200 pb-6 group">
+                                <h4 class="text-stone-900 font-bold mb-2 group-hover:text-champagne-500 transition-colors">Rotação 360º (1.50m)</h4>
+                                <p class="text-sm text-stone-500 font-light leading-relaxed">Espaço livre circular com 1.50m de diâmetro, necessário para que uma cadeira de rodas possa inverter o sentido de marcha.</p>
+                            </div>
+                            <div class="border-b border-champagne-200 pb-6 group">
+                                <h4 class="text-stone-900 font-bold mb-2 group-hover:text-champagne-500 transition-colors">Level Zero</h4>
+                                <p class="text-sm text-stone-500 font-light leading-relaxed">Pavimentos totalmente nivelados, sem soleiras ou degraus, mesmo na transição para o chuveiro.</p>
+                            </div>
+                            <div class="border-b border-champagne-200 pb-6 group">
+                                <h4 class="text-stone-900 font-bold mb-2 group-hover:text-champagne-500 transition-colors">Alcance Manual (0.40m - 1.20m)</h4>
+                                <p class="text-sm text-stone-500 font-light leading-relaxed">Intervalo de altura ideal para interruptores, tomadas e manípulos, garantindo acesso sentado ou em pé.</p>
+                            </div>
+                            <div class="border-b border-champagne-200 pb-6 group">
+                                <h4 class="text-stone-900 font-bold mb-2 group-hover:text-champagne-500 transition-colors">Desenho Universal</h4>
+                                <p class="text-sm text-stone-500 font-light leading-relaxed">Design de produtos e ambientes para serem usados por todas as pessoas, sem necessidade de adaptação posterior.</p>
+                            </div>
+                            <div class="border-b border-champagne-200 pb-6 group">
+                                <h4 class="text-stone-900 font-bold mb-2 group-hover:text-champagne-500 transition-colors">Piso Podotátil</h4>
+                                <p class="text-sm text-stone-500 font-light leading-relaxed">Texturas no solo que avisam pessoas com deficiência visual sobre perigos ou direções a seguir.</p>
+                            </div>
+                            <div class="border-b border-champagne-200 pb-6 group">
+                                <h4 class="text-stone-900 font-bold mb-2 group-hover:text-champagne-500 transition-colors">LRV (Light Reflectance Value)</h4>
+                                <p class="text-sm text-stone-500 font-light leading-relaxed">Medida de contraste cromático. Essencial para destacar portas e obstáculos para quem tem baixa visão.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section: FAQ Expandido -->
+                    <section id="faq">
+                        <div class="mb-12">
+                            <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-champagne-500 mb-4 block">Dúvidas Frequentes</span>
+                            <h2 class="text-4xl md:text-5xl font-serif text-stone-900">Perguntas & Respostas</h2>
+                        </div>
+                        <div class="space-y-4">
+                            <details class="group bg-white rounded-3xl border border-champagne-100 overflow-hidden">
+                                <summary class="flex justify-between items-center p-8 cursor-pointer list-none font-medium text-lg text-stone-900 group-open:bg-stone-50 transition-colors">
+                                    É obrigatório o Atestado Multiuso para o IVA a 6%?
+                                    <span class="transition-transform group-open:-rotate-180 opacity-40"><iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon></span>
+                                </summary>
+                                <div class="p-8 text-base text-stone-500 font-light leading-relaxed border-t border-champagne-50">
+                                    Sim. Para usufruir da Verba 2.27, é necessário comprovar a deficiência (incapacidade igual ou superior a 60%) através do Atestado Médico de Incapacidade Multiuso.
+                                </div>
+                            </details>
+                            <details class="group bg-white rounded-3xl border border-champagne-100 overflow-hidden">
+                                <summary class="flex justify-between items-center p-8 cursor-pointer list-none font-medium text-lg text-stone-900 group-open:bg-stone-50 transition-colors">
+                                    Posso colocar uma rampa no prédio sem autorização dos vizinhos?
+                                    <span class="transition-transform group-open:-rotate-180 opacity-40"><iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon></span>
+                                </summary>
+                                <div class="p-8 text-base text-stone-500 font-light leading-relaxed border-t border-champagne-50">
+                                    Sim, desde que a inclinação não prejudique a segurança. Deve notificar o condomínio com 15 dias de antecedência, mas a assembleia não pode impedir a obra se o condómino tiver mobilidade reduzida comprovada.
+                                </div>
+                            </details>
+                            <details class="group bg-white rounded-3xl border border-champagne-100 overflow-hidden">
+                                <summary class="flex justify-between items-center p-8 cursor-pointer list-none font-medium text-lg text-stone-900 group-open:bg-stone-50 transition-colors">
+                                    Existem subsídios diretos para estas obras?
+                                    <span class="transition-transform group-open:-rotate-180 opacity-40"><iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon></span>
+                                </summary>
+                                <div class="p-8 text-base text-stone-500 font-light leading-relaxed border-t border-champagne-50">
+                                    Sim, existem programas como o <strong>AMIM (Apoio à Melhoria das Acessibilidades nas Habitações)</strong> do INR, que financia parte das obras de adaptação para pessoas com deficiência.
+                                </div>
+                            </details>
+                            <details class="group bg-white rounded-3xl border border-champagne-100 overflow-hidden">
+                                <summary class="flex justify-between items-center p-8 cursor-pointer list-none font-medium text-lg text-stone-900 group-open:bg-stone-50 transition-colors">
+                                    O que é uma "Alavanca Clínica"?
+                                    <span class="transition-transform group-open:-rotate-180 opacity-40"><iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon></span>
+                                </summary>
+                                <div class="p-8 text-base text-stone-500 font-light leading-relaxed border-t border-champagne-50">
+                                    São torneiras ou manípulos de porta desenhados para serem operados com o cotovelo ou punho, ideais para quem tem limitações de destreza manual ou força.
+                                </div>
+                            </details>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white py-32 px-6 border-t border-champagne-100">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-24">
+            <div class="max-w-md">
+                <img src="assets/new_images/LOGO.png" alt="Logo" class="logo-img h-36 md:h-48 opacity-90 mb-12">
+                <p class="text-base text-stone-400 font-light leading-loose italic pr-12">
+                    "Arquitetura sensível e técnica ao serviço da autonomia humana."
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-20 md:gap-40">
+                <div>
+                    <h4 class="text-stone-900 text-[11px] font-bold mb-12 uppercase tracking-[0.4em]">Atelier</h4>
+                    <ul class="space-y-8 text-xs text-stone-400 font-medium uppercase tracking-[0.3em]">
+                        <li><a href="index.html#divisoes" class="hover:text-stone-900 transition-colors">Divisões Inclusivas</a></li>
+                        <li><a href="index.html#deficiencias" class="hover:text-stone-900 transition-colors">Acessibilidade</a></li>
+                        <li><a href="index.html#empatia" class="hover:text-stone-900 transition-colors">Guia da Empatia</a></li>
+                        <li><a href="recursos.html" class="hover:text-stone-900 transition-colors text-champagne-500">Recursos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-stone-900 text-[11px] font-bold mb-12 uppercase tracking-[0.4em]">Contacto</h4>
+                    <ul class="space-y-8 text-xs text-stone-400 font-medium">
+                        <li><a href="mailto:geral@cristianaazevedo.pt" class="hover:text-stone-900 transition-colors uppercase tracking-[0.3em]">geral@cristianaazevedo.pt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
