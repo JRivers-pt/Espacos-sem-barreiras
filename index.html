@@ -70,6 +70,10 @@
             width: auto;
             max-height: 210px;
             object-fit: contain;
+            /* Contrast and brightness help make the light grey checkers white, 
+               which then disappears with multiply blend mode */
+            filter: contrast(1.1) brightness(1.1);
+            mix-blend-mode: multiply;
         }
 
         .bg-mesh {
@@ -144,9 +148,9 @@
 
                 <div class="lg:col-span-7">
                     <div class="w-full aspect-[4/3] bg-white rounded-[3rem] overflow-hidden relative group shadow-2xl border border-white">
-                        <img src="assets/new_images/image (38).png"
-                            alt="Visualização de uma suite inclusiva do blog Espaços sem Barreiras."
-                            class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105"
+                        <img src="assets/new_images/image (45).png"
+                            alt="Cozinha moderna acessível com bancadas suspensas e raio de manobra amplo."
+                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                             loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-tr from-champagne-100/10 to-transparent"></div>
                     </div>
