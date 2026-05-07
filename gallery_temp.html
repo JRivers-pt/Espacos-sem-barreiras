@@ -1,77 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Image Classification Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Assets — Espaços sem Barreiras</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        champagne: {
+                            50: '#f7f1e9', 100: '#efdfce', 200: '#e1c6a6',
+                            300: '#d1a77b', 400: '#c18a51', 500: '#a36d39',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body class="bg-gray-100 p-10">
-    <h1 class="text-3xl font-bold mb-10 text-center">Espaços sem Barreiras - Image Gallery</h1>
-    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-        <script>
-            const images = [
-                "Gemini_Generated_Image_5mug175mug175mug.png",
-                "Gemini_Generated_Image_8fe29a8fe29a8fe2.png",
-                "Gemini_Generated_Image_i9u42ri9u42ri9u4 (2).png",
-                "Gemini_Generated_Image_i9u42ri9u42ri9u4.png",
-                "hero_inclusive_suite.png",
-                "image (37).png",
-                "image (38).png",
-                "image (39).png",
-                "image (40).png",
-                "image (41).png",
-                "image (42).png",
-                "image (43).png",
-                "image (44).png",
-                "image (45).png",
-                "image (46).png",
-                "image (47).png",
-                "image (48).png",
-                "image (49).png",
-                "image (50).png",
-                "image (51).png",
-                "image (52).png",
-                "image (53).png",
-                "image (54).png",
-                "image (57).png",
-                "image_0139188a-64f8-4522-a98c-c6ede1e682b7 (2).png",
-                "image_18a55199-4a8d-4304-9366-1e6b75e1f370 (1).png",
-                "image_26f5dff2-7af2-431a-8020-bd225ac2bca0 (1).png",
-                "image_2c2fd574-a24d-4379-9fc5-4c10b1b13921 (1).png",
-                "image_31a77d17-8b4d-468a-8273-76c61b0251f6 (1).png",
-                "image_3a0fa9c1-2299-4feb-9f93-286812c2cd53 (3).png",
-                "image_4a224162-8d3c-480a-ba98-1b026aeb613d (2).png",
-                "image_528bcddc-08af-451c-8a51-0bf64a544d3e (1).png",
-                "image_535ef8a5-dd86-4307-8c66-ef803dd6c22d (1).png",
-                "image_55.png",
-                "image_7acca461-7e60-4f34-8a62-b699b4b1375c.png",
-                "image_7f8c8c78-42ba-40ab-b301-33a91769e706.png",
-                "image_88bf2a26-8df3-42b9-bc77-23b918d035a2 (1).png",
-                "image_90829527-13e2-4b01-bf3d-34f76f3296ce (2).png",
-                "image_94213883-6a03-4471-b75b-ff05d3a909be (1).png",
-                "image_c020ee79-c5c4-4e83-b5d5-f8ebd0b66154 (1).png",
-                "image_c89d23f8-fa32-41bc-9c40-1f01563d8879 (3).png",
-                "image_d7ff1b71-2493-4e6c-94da-11256a98cc1e (1).png",
-                "image_e789af8f-962d-4cf4-b473-3e972fad96f7 (1).png",
-                "image_e9007535-bffa-4457-967e-38406e777f37.png",
-                "image_f2fb981d-5503-431d-8166-dd5b26d9207e (1).png",
-                "img12.png",
-                "img2.png",
-                "img7.png",
-                "logo_limpo.png",
-                "suite-inclu.png",
-                "visual_impairment.png"
-            ];
-            
-            images.forEach(img => {
-                document.write(`
-                    <div class="bg-white p-2 rounded shadow">
-                        <img src="assets/new_images/${img}" class="w-full h-40 object-cover rounded mb-2">
-                        <p class="text-[10px] break-all text-center">${img}</p>
+<body class="bg-champagne-50 text-stone-800 p-8">
+
+    <div class="max-w-5xl mx-auto">
+        <h1 class="text-3xl font-bold text-stone-900 mb-2">Gestão de Assets</h1>
+        <p class="text-stone-500 mb-10">Referência local de pastas e imagens. Adiciona as tuas fotos às pastas abaixo e indica-me os nomes para atualizar os HTML.</p>
+
+        <!-- Portfolio Sections -->
+        <div class="space-y-10">
+
+            <!-- Cozinhas -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-champagne-100">
+                <h2 class="text-xl font-bold text-stone-900 mb-1">🍳 Cozinhas</h2>
+                <p class="text-xs text-stone-400 font-mono mb-4">assets/portfolio/cozinhas/</p>
+                <p class="text-stone-500 text-sm mb-4">Cola aqui fotos de bancadas com vão livre, gavetões deslizantes, fornos em altura acessível, layout para cadeira de rodas.</p>
+                <div id="grid-cozinhas" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="aspect-square rounded-xl border-2 border-dashed border-champagne-200 flex items-center justify-center text-stone-300 text-sm text-center p-2">Aguarda<br>fotos</div>
+                </div>
+            </div>
+
+            <!-- Banhos -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-champagne-100">
+                <h2 class="text-xl font-bold text-stone-900 mb-1">🚿 Casas de Banho</h2>
+                <p class="text-xs text-stone-400 font-mono mb-4">assets/portfolio/banhos/</p>
+                <p class="text-stone-500 text-sm mb-4">Cola aqui fotos de duche level zero, barras de apoio, lavatório flutuante, espaço de transferência.</p>
+                <div id="grid-banhos" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="aspect-square rounded-xl border-2 border-dashed border-champagne-200 flex items-center justify-center text-stone-300 text-sm text-center p-2">Aguarda<br>fotos</div>
+                </div>
+            </div>
+
+            <!-- Salas -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-champagne-100">
+                <h2 class="text-xl font-bold text-stone-900 mb-1">🛋️ Salas de Estar</h2>
+                <p class="text-xs text-stone-400 font-mono mb-4">assets/portfolio/salas/</p>
+                <p class="text-stone-500 text-sm mb-4">Cola aqui fotos de salas com espaço de manobra, portas largas, mobiliário adequado, pavimento contínuo.</p>
+                <div id="grid-salas" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="aspect-square rounded-xl border-2 border-dashed border-champagne-200 flex items-center justify-center text-stone-300 text-sm text-center p-2">Aguarda<br>fotos</div>
+                </div>
+            </div>
+
+            <!-- Quartos -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-champagne-100">
+                <h2 class="text-xl font-bold text-stone-900 mb-1">🛏️ Quartos</h2>
+                <p class="text-xs text-stone-400 font-mono mb-4">assets/portfolio/quartos/</p>
+                <p class="text-stone-500 text-sm mb-4">Cola aqui fotos de quartos com espaço lateral de transferência, cama à altura certa, roupeiros adaptados.</p>
+                <div id="grid-quartos" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="aspect-square rounded-xl border-2 border-dashed border-champagne-200 flex items-center justify-center text-stone-300 text-sm text-center p-2">Aguarda<br>fotos</div>
+                </div>
+            </div>
+
+            <!-- Deficiências -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-champagne-100">
+                <h2 class="text-xl font-bold text-stone-900 mb-1">♿ Deficiências</h2>
+                <p class="text-xs text-stone-400 font-mono mb-4">assets/portfolio/deficiencias/</p>
+                <p class="text-stone-500 text-sm mb-4">Cola aqui fotos ilustrativas dos tipos de deficiência (mobilidade, visual, auditiva, cognitiva).</p>
+                <p class="text-xs text-amber-600 font-semibold mb-4">⚠️ A foto da deficiência visual atual (visual_impairment.png) tem óculos — a ser corrigida.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="relative group">
+                        <img src="assets/new_images/visual_impairment.png" class="w-full aspect-square object-cover rounded-xl border-2 border-amber-300">
+                        <div class="absolute inset-0 bg-amber-500/20 rounded-xl flex items-end p-2">
+                            <span class="text-xs bg-amber-500 text-white px-2 py-1 rounded font-bold">visual_impairment.png<br>⚠️ tem óculos</span>
+                        </div>
                     </div>
-                `);
-            });
-        </script>
+                    <div class="aspect-square rounded-xl border-2 border-dashed border-champagne-200 flex items-center justify-center text-stone-300 text-sm text-center p-2">Aguarda<br>fotos</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Current new_images reference -->
+        <div class="mt-16 bg-stone-100 rounded-2xl p-6">
+            <h2 class="text-lg font-bold text-stone-700 mb-4">📁 Imagens actuais em assets/new_images/</h2>
+            <p class="text-stone-500 text-sm mb-4">Referência rápida das imagens existentes (usadas no site principal e no cozinha-acessivel.html).</p>
+            <div class="grid grid-cols-3 md:grid-cols-6 gap-3 text-xs text-stone-500">
+                <div class="text-center"><div class="bg-stone-200 rounded-lg h-16 flex items-center justify-center text-stone-400 mb-1">img</div>logo_CA.png</div>
+                <div class="text-center"><div class="bg-stone-200 rounded-lg h-16 flex items-center justify-center text-stone-400 mb-1">img</div>visual_impairment.png</div>
+                <div class="text-center"><div class="bg-stone-200 rounded-lg h-16 flex items-center justify-center text-stone-400 mb-1">img</div>image (37–54).png</div>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
